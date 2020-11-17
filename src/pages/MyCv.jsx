@@ -1,5 +1,13 @@
+import { Container } from "reactstrap";
+
+const { default: CivilState } = require("../components/CivilState");
+
 const MyCv = () => {
-    return <div>plop je suis sur la page cv</div>;
+    return (
+        <Container>
+            <CivilState />
+        </Container>
+    );
 };
 
 export default MyCv;
