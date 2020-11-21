@@ -1,0 +1,33 @@
+.ml15 {
+    padding-top: 200px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.introContainer {
+    height: 100%;
+    background: linear-gradient(180deg, #0c159f, #ffffff);
+    background-size: 600% 600%;
+
+    animation: AnimationLetter 2s linear;
+}
+
+@keyframes AnimationLetter {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+    /* 100% {
+        background-position: 14% 0%;
+    } */
+}

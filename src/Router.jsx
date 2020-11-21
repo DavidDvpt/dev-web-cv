@@ -1,12 +1,12 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import Layout from "./layout/Layout";
-import MyCv from "./pages/MyCv";
+import Intro from "./pages/Intro";
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Layout>
-                <Route path="/" component={MyCv} />
+                <Route path="/" component={Intro} />
             </Layout>
         </BrowserRouter>
     );

@@ -3,7 +3,9 @@ import { Container } from "reactstrap";
 const Layout = ({ children }) => {
     return (
         <>
-            <Container>{children}</Container>
+            <Container fluid className="h-100 p-0">
+                {children}
+            </Container>
         </>
     );
 };
