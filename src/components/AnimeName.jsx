@@ -12,7 +12,9 @@ function AnimeName() {
                 <span className="introWord">David</span>
                 <span className="introWord"> Mosca</span>
             </h1>
-            <h2 className="introMetier">Développeur web junior</h2>
+            <h2 className="text-right inline-block introMetier">
+                Développeur web junior
+            </h2>
         </>
     );
 }

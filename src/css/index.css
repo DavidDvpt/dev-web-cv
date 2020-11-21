@@ -11,22 +11,35 @@ body,
     -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
-}
+} */
 /* 
             Intro
 */
 
 .introContainer {
     height: 100%;
-    background: linear-gradient(180deg, #0c159f, #ffffff);
+    /* background: linear-gradient(180deg, #0c159f, #ffffff);
     background-size: 600% 600%;
 
-    animation: AnimationLetter 1s linear;
+    /* animation: AnimationLetter 1s linear;
+     */
+    /* animation: App-logo-spin infinite 20s linear;  */
 }
 
+span {
+    display: inline-block;
+    font-size: 5em;
+    color: yellow;
+}
+
+/* .div {
+    font-size: 2em;
+    width: 200px;
+} */
+/* 
 @keyframes AnimationLetter {
     0% {
         background-position: 100% 100%;
@@ -36,16 +49,20 @@ code {
     }
     /* 100% {
         background-position: 14% 0%;
-    } */
-}
+    }
+} 
 
+.letter {
+    padding-top: 200px;
+    font-size: 2em;
+}
 .introName {
     font-family: "Ubuntu";
+    color: yellow;
     padding-top: 200px;
     text-align: center;
-    font-weight: 800;
+    font-weight: 100;
     font-size: 5em;
-    /* text-transform: uppercase; */
     letter-spacing: 0.5em;
 }
 
@@ -53,3 +70,16 @@ code {
     display: inline-block;
     line-height: 1em;
 }
+
+.introMetier {
+    font-size: 3em;
+}
+
+@keyframes animed-letter {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
