@@ -4,14 +4,15 @@ import { animationIntro } from "../js/animations";
 
 function Intro() {
     useEffect(() => {
-        animationIntro();
+        const animation = animationIntro();
+        animation.finished.then(console.log("l'animation est terminée"));
     }, []);
     return (
         <Container
             fluid
-            className="introContainer d-flex align-content-center flex-wrap align-self-center"
+            className="introContainer d-flex align-content-center flex-wrap"
         >
-            <div className="col-12">
+            <div className="col-12 p-0 m-auto">
                 <span className="letter ib op-0">D</span>
                 <span className="letter ib op-0">a</span>
                 <span className="letter ib op-0">v</span>
@@ -24,8 +25,10 @@ function Intro() {
                 <span className="letter ib op-0">C</span>
                 <span className="letter ib op-0">A</span>
             </div>
-            <div className="introProfession op-0 col-12">
-                Développeur web Junior
+            <div className="d-flex flex-row-reverse col-12">
+                <p className="introProfession op-0 ib">
+                    Développeur web Junior
+                </p>
             </div>
         </Container>
     );
