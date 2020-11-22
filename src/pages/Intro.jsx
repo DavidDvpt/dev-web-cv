@@ -5,14 +5,19 @@ import { animationIntro } from "../js/animations";
 function Intro() {
     useEffect(() => {
         const animation = animationIntro();
-        animation.finished.then(console.log("l'animation est terminée"));
+        animation.finished.then(
+            console.log(
+                "l'animation est terminée",
+                document.querySelector(".letterBlock").offsetLeft
+            )
+        );
     }, []);
     return (
         <Container
             fluid
             className="introContainer d-flex align-content-center flex-wrap"
         >
-            <div className="col-12 p-0 m-auto">
+            <div className="letterBlock col-12 p-0 m-auto">
                 <span className="letter ib op-0">D</span>
                 <span className="letter ib op-0">a</span>
                 <span className="letter ib op-0">v</span>
