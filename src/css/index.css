@@ -1,7 +1,8 @@
 /* bien mettre height 100% à toutes les balises parentes ici html, body, et #root de react*/
 html,
 body,
-#root {
+#root,
+.container-fluid {
     height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -10,76 +11,23 @@ body,
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-/* code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-} */
-/* 
-            Intro
-*/
-
 .introContainer {
-    height: 100%;
-    /* background: linear-gradient(180deg, #0c159f, #ffffff);
-    background-size: 600% 600%;
-
-    /* animation: AnimationLetter 1s linear;
-     */
-    /* animation: App-logo-spin infinite 20s linear;  */
 }
-
-span {
-    display: inline-block;
-    font-size: 5em;
-    color: yellow;
-}
-
-/* .div {
-    font-size: 2em;
-    width: 200px;
-} */
-/* 
-@keyframes AnimationLetter {
-    0% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-    /* 100% {
-        background-position: 14% 0%;
-    }
-} 
-
 .letter {
-    padding-top: 200px;
-    font-size: 2em;
-}
-.introName {
-    font-family: "Ubuntu";
-    color: yellow;
-    padding-top: 200px;
-    text-align: center;
-    font-weight: 100;
     font-size: 5em;
-    letter-spacing: 0.5em;
+    color: yellow;
 }
 
-.introName .introWord {
+.introProfession {
+    color: yellow;
+    font-size: 2em;
+    text-align: right;
+}
+
+.ib {
     display: inline-block;
-    line-height: 1em;
 }
 
-.introMetier {
-    font-size: 3em;
+.op-0 {
+    /* opacity: 0; */
 }
-
-@keyframes animed-letter {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */

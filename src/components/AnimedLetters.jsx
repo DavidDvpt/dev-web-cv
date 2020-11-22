@@ -13,46 +13,36 @@ const animation = () => {
         targets: ".introContainer",
         backgroundColor: ["#fff", "#0E0441"],
         duration: 1000,
-    }).add({
-        targets: ".letter",
-        opacity: [0, 1],
-        translateY: valueY,
-        translateX: valueX,
-        duration: 100,
-        easing: "linear",
-        rotate: {
-            value: 360,
-            duration: 1000,
+    })
+        .add({
+            targets: ".letter",
+            opacity: [0, 1],
+            translateY: valueY,
+            translateX: valueX,
+            duration: 500,
             easing: "easeInExpo",
-        },
-        // // difference de taille entre la
-        // scale: anime.stagger([0.7, 1], { from: "center" }),
-        // // tps entre chaque descente de lettre
-        delay: anime.stagger(400, { start: 1000 }),
-        // delay: anime.stagger(400, { start: 1000 }),
-        //
-    });
+            rotate: {
+                value: 360,
+                duration: 800,
+                easing: "easeInExpo",
+            },
+            // // difference de taille entre la
+            // scale: anime.stagger([0.7, 1], { from: "center" }),
+            // // tps entre chaque descente de lettre
+            delay: anime.stagger(400, { start: 1000 }),
+            // delay: anime.stagger(400, { start: 1000 }),
+            //
+        })
+        .add({
+            targets: ".introContainer",
+        });
 };
 
 function AnimedLetters() {
     useEffect(() => {
         animation();
     }, []);
-    return (
-        <Container fluid className="">
-            <span className="letter">D</span>
-            <span className="letter">a</span>
-            <span className="letter">v</span>
-            <span className="letter">i</span>
-            <span className="letter">d</span>
-
-            <span className="letter">&nbsp;M</span>
-            <span className="letter">O</span>
-            <span className="letter">S</span>
-            <span className="letter">C</span>
-            <span className="letter">A</span>
-        </Container>
-    );
+    return <Container fluid className=""></Container>;
 }
 
 export default AnimedLetters;
