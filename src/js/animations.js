@@ -31,7 +31,7 @@ export const animationIntro = () => {
                 targets: ".letter",
                 translateY: 0,
                 translateX: 0,
-                duration: 1000,
+                duration: 1,
                 rotate: {
                     value: 180,
                     duration: 1,
