@@ -1,16 +1,20 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Container } from "reactstrap";
+import AppContext from "../context/appContext";
 import { animationIntro } from "../js/animations";
 
 function Intro() {
+    const { setStartNavAnim } = useContext(AppContext);
+
     useEffect(() => {
         const animation = animationIntro();
-        animation.finished.then(
+        animation.finished.then(() => {
             console.log(
                 "l'animation est terminée",
                 document.querySelector(".letterBlock").offsetLeft
-            )
-        );
+            );
+            setStartNavAnim(true);
+        });
     }, []);
     return (
         <Container

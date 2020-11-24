@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import AnimationContext from "./context/animationContext";
+import AppContext from "./context/appContext";
 import Layout from "./layout/Layout";
 import Curriculum from "./pages/Curriculum";
 import Experiences from "./pages/Experiences";
@@ -8,17 +9,18 @@ import Intro from "./pages/Intro";
 import Projets from "./pages/Projets";
 
 const Router = () => {
+    const [startNavAnim, setStartNavAnim] = useState(false);
     return (
         <BrowserRouter>
-            <AnimationContext.Provider value={{}}>
+            <AppContext.Provider value={{ startNavAnim, setStartNavAnim }}>
                 <Layout>
-                    <Route path="/" component={Intro} />
-                    <Route path="/" component={Projets} />
-                    <Route path="/" component={Experiences} />
-                    <Route path="/" component={Formations} />
-                    <Route path="/" component={Curriculum} />
+                    <Route exact path="/" component={Intro} />
+                    <Route path="/projets" component={Projets} />
+                    <Route path="/experiences" component={Experiences} />
+                    <Route path="/formations" component={Formations} />
+                    <Route path="/curriculum" component={Curriculum} />
                 </Layout>
-            </AnimationContext.Provider>
+            </AppContext.Provider>
         </BrowserRouter>
     );
 };

@@ -3,6 +3,19 @@ import anime from "animejs/lib/anime.es";
 const maxY = Math.floor(window.innerHeight);
 const maxX = Math.floor(window.innerWidth);
 
+export const animationNav = () => {
+    // const tl = anime.timeline({
+    //     easing: "linear",
+    //     duration: 1,
+    // });
+
+    anime({
+        targets: "nav",
+        translateY: [-60, 0],
+        easing: "easeOutElastic(5, 0.4)",
+        duration: 2500,
+    });
+};
 export const animationIntro = () => {
     let profWidth = document.querySelector(".introProfession").offsetWidth;
     let letterBlockleft = document.querySelector(".letter").offsetLeft;
@@ -21,7 +34,7 @@ export const animationIntro = () => {
         tl
             // white to dark blus gradient background
             .add({
-                targets: ".introContainer",
+                targets: "body",
                 backgroundColor: ["#fff", "#0E0441"],
                 easing: "linear",
                 duration: 700,
@@ -51,13 +64,13 @@ export const animationIntro = () => {
                     duration: 1000,
                     easing: "easeInExpo",
                 },
-                delay: anime.stagger(200),
+                delay: anime.stagger(300),
             })
             // profession comes to right to
             .add({
                 targets: ".introProfession",
                 opacity: 1,
-                translateX: [maxX, -maxX * 0.7 + profWidth],
+                translateX: [maxX, -maxX * 0.65 + profWidth],
                 duration: 1000,
             })
     );
