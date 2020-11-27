@@ -51,6 +51,10 @@ body,
     border: 5px solid grey;
 }
 
+.groupInfos {
+    background-color: grey;
+    border-radius: 0% 50% 0px 0px;
+}
 /* 
     NavBar
 */
