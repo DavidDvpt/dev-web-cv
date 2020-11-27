@@ -15,6 +15,32 @@ body,
     -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+    min-width: 1140px;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.enTete {
+    height: 200px;
+    width: 1140px;
+}
+
+.enTete-container-text,
+.avatar-container {
+    background-color: grey;
+}
+.enTete-container-text {
+    width: 940px;
+}
+.avatar-container {
+    border-radius: 0% 50% 50% 0%;
+    width: 200px;
+}
+
 .avatar {
     border-radius: 50%;
     border: 5px solid grey;

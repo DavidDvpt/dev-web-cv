@@ -3,7 +3,7 @@ import EnTete from "../components/enTete";
 
 function Curriculum() {
     return (
-        <Container>
+        <Container className="curriculum h-100">
             <EnTete />
         </Container>
     );

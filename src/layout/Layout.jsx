@@ -5,9 +5,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Navigation />
-            <Container fluid className="h-100 p-0">
-                {children}
-            </Container>
+            <Container className="h-100 p-0 w-100 m-auto">{children}</Container>
         </>
     );
 };
