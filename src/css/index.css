@@ -29,6 +29,11 @@ body,
     width: 1140px;
 }
 
+.enTete a {
+    color: white;
+    text-decoration: none;
+}
+
 .enTete-container-text,
 .avatar-container {
     background-color: grey;
