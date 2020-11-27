@@ -1,9 +1,10 @@
 import { Container } from "reactstrap";
+import EnTete from "../components/enTete";
 
 function Curriculum() {
     return (
-        <Container className="d-flex align-content-center">
-            Under Construction
+        <Container>
+            <EnTete />
         </Container>
     );
 }

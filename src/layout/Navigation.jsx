@@ -37,7 +37,7 @@ function Navigation() {
                     </NavLink>
                 </NavItem>
                 <NavItem className="mx-3">
-                    <NavLink tag={Link} to={"/cv"}>
+                    <NavLink tag={Link} to={"/curriculum"}>
                         CV
                     </NavLink>
                 </NavItem>
