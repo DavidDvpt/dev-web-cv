@@ -15,10 +15,9 @@ function EnTete() {
         <Container className="enTete d-flex">
             <Container className="enTete-container-text">
                 <h1 className="pl-2 mb-0">MOSCA David</h1>
-                <h3 className="pl-2 mb-0">Développeur web junior</h3>
                 <Container className="d-flex">
                     <div className="pl-2 mt-2 col-4">
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faBirthdayCake}
                                 size="1x"
@@ -26,7 +25,7 @@ function EnTete() {
                             />
                             14 décembre 1969
                         </p>
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faMapMarkerAlt}
                                 size="1x"
@@ -34,7 +33,7 @@ function EnTete() {
                             />
                             Bayonne
                         </p>
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faPhone}
                                 size="1x"
@@ -42,7 +41,7 @@ function EnTete() {
                             />
                             06 80 52 15 94
                         </p>
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faAt}
                                 size="1x"
@@ -55,7 +54,7 @@ function EnTete() {
                         </p>
                     </div>
                     <div className="pl-2 mt-2 col-4">
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faGithub}
                                 size="1x"
@@ -63,7 +62,7 @@ function EnTete() {
                             />
                             <a href="https://github.com/DavidDvpt">DavidDvpt</a>
                         </p>
-                        <p className="mb-1">
+                        <p className="">
                             <FontAwesomeIcon
                                 icon={faLinkedin}
                                 size="1x"
@@ -75,6 +74,7 @@ function EnTete() {
                         </p>
                     </div>
                 </Container>
+                <h2 className="pl-2 mb-0 text-right">Développeur web junior</h2>
             </Container>
             <Container className="avatar-container">
                 <img
