@@ -5,6 +5,7 @@ import {
     faAt,
     faPhone,
     faBirthdayCake,
+    faCar,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -48,12 +49,19 @@ function EnTete() {
                                 className="mr-2"
                             />
                             <a href="mailto=david.mosca69@gmail.com">
-                                {" "}
                                 david.mosca69@gmail.com
                             </a>
                         </p>
+                        <p className="">
+                            <FontAwesomeIcon
+                                icon={faCar}
+                                size="1x"
+                                className="mr-2"
+                            />
+                            Permis B, véhicule
+                        </p>
                     </div>
-                    <div className="pl-2 mt-2 col-4">
+                    <div className="pl-2 mt-2 col-3">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faGithub}
@@ -73,8 +81,10 @@ function EnTete() {
                             </a>
                         </p>
                     </div>
+                    <h2 className="pl-2 mb-0 text-right col-5 align-self-end">
+                        Développeur web junior
+                    </h2>
                 </Container>
-                <h2 className="pl-2 mb-0 text-right">Développeur web junior</h2>
             </Container>
             <Container className="avatar-container">
                 <img

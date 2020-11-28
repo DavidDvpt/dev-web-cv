@@ -77,7 +77,7 @@ export const experiencesProfessionnelles = [
                 projet: "World of Wildcraft",
                 technique: "100% front, React, bootstrap, API externe + git",
                 lien: "https://worldofwildcraft.netlify.app/",
-                github: "",
+                github: "https://github.com/DavidDvpt/btz-0920-p2-wow",
             },
             {
                 projet: "",
@@ -127,7 +127,7 @@ export const experiencesProfessionnelles = [
     },
     {
         date: "1993-2020",
-        nom: "TAL - Tissages d'Ameublement de la Loire",
+        nom: "Tissages d'Ameublement de la Loire (TAL)",
         contenu: [
             {
                 projet: "CAO - croisement de fils",
