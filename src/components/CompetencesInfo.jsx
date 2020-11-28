@@ -6,6 +6,7 @@ import {
     faJs,
     faLinux,
     faBootstrap,
+    faPhp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,13 +14,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function CompetencesInfo() {
     return (
         <Container>
-            <h4>Competences Informatiques</h4>
+            <h4>Compétences informatiques</h4>
             <div className="d-flex flex-wrap">
                 <FontAwesomeIcon
                     icon={faNodeJs}
                     size="5x"
                     className="col-3 my-2"
                 />
+                <FontAwesomeIcon icon={faJs} size="5x" className="col-3 my-2" />
                 <FontAwesomeIcon
                     icon={faReact}
                     size="5x"
@@ -30,7 +32,11 @@ function CompetencesInfo() {
                     size="5x"
                     className="col-3 my-2"
                 />
-                <FontAwesomeIcon icon={faJs} size="5x" className="col-3 my-2" />
+                <FontAwesomeIcon
+                    icon={faPhp}
+                    size="5x"
+                    className="col-3 my-2"
+                />
                 <FontAwesomeIcon
                     icon={faDatabase}
                     size="5x"
