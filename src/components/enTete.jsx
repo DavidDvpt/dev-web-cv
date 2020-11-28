@@ -1,4 +1,4 @@
-import { Container } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faMapMarkerAlt,
@@ -13,11 +13,13 @@ import photoProfil_200 from "../images/photoProfil_200.jpeg";
 
 function EnTete() {
     return (
-        <Container className="enTete d-flex">
-            <Container className="enTete-container-text">
-                <h1 className="pl-2 mb-0">MOSCA David</h1>
-                <Container className="d-flex">
-                    <div className="pl-2 mt-2 col-4">
+        <Row className="enTete">
+            <Col className="enTete-container-text col-10 h-100">
+                <Row>
+                    <h1 className="pl-2 mb-0">MOSCA David</h1>
+                </Row>
+                <Row>
+                    <Col className="col-4">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faBirthdayCake}
@@ -60,8 +62,8 @@ function EnTete() {
                             />
                             Permis B, véhicule
                         </p>
-                    </div>
-                    <div className="pl-2 mt-2 col-3">
+                    </Col>
+                    <Col className="col-3">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faGithub}
@@ -80,20 +82,16 @@ function EnTete() {
                                 david-mosca
                             </a>
                         </p>
-                    </div>
-                    <h2 className="pl-2 mb-0 text-right col-5 align-self-end">
-                        Développeur web junior
-                    </h2>
-                </Container>
-            </Container>
-            <Container className="avatar-container">
-                <img
-                    src={photoProfil_200}
-                    alt="avatar"
-                    className="avatar p-0 m-0 h-100"
-                />
-            </Container>
-        </Container>
+                    </Col>
+                    <Col className="col-5 d-flex align-items-end">
+                        <h2 className="text-right">Développeur web junior</h2>
+                    </Col>
+                </Row>
+            </Col>
+            <Col className="avatar-container col-2 h-100 p-0 d-flex align-items-center">
+                <img src={photoProfil_200} alt="avatar" className="avatar" />
+            </Col>
+        </Row>
     );
 }
 
