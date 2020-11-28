@@ -5,7 +5,6 @@ import {
     faAt,
     faPhone,
     faBirthdayCake,
-    faCar,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -16,10 +15,10 @@ function EnTete() {
         <Row className="enTete">
             <Col className="enTete-container-text col-10 h-100">
                 <Row>
-                    <h1 className="pl-2 mb-0">MOSCA David</h1>
+                    <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
                 </Row>
-                <Row>
-                    <Col className="col-4">
+                <Row className="">
+                    <Col className="col-4 pr-0">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faBirthdayCake}
@@ -54,16 +53,8 @@ function EnTete() {
                                 david.mosca69@gmail.com
                             </a>
                         </p>
-                        <p className="">
-                            <FontAwesomeIcon
-                                icon={faCar}
-                                size="1x"
-                                className="mr-2"
-                            />
-                            Permis B, véhicule
-                        </p>
                     </Col>
-                    <Col className="col-3">
+                    <Col className="col-3 p-0">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faGithub}
@@ -83,9 +74,9 @@ function EnTete() {
                             </a>
                         </p>
                     </Col>
-                    <Col className="col-5 d-flex align-items-end">
-                        <h2 className="text-right">Développeur web junior</h2>
-                    </Col>
+                </Row>
+                <Row className="p-0 justify-content-end">
+                    <h2 className="font-weight-bold">Développeur web junior</h2>
                 </Row>
             </Col>
             <Col className="avatar-container col-2 h-100 p-0 d-flex align-items-center">

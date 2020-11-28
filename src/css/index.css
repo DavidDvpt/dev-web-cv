@@ -25,10 +25,10 @@ body,
 .curriculumContent {
     background-color: white;
     color: black;
-    padding-top: 5px;
 }
 .enTete {
     height: 200px;
+    padding: 5px;
 }
 .enTete p {
     margin: 0px;
