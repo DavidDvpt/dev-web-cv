@@ -41,9 +41,11 @@ body,
 .enTete-container-text {
     width: 940px;
 }
+
 .enTete-container-text p {
     margin: 0px;
 }
+
 .avatar-container {
     border-radius: 0% 50% 50% 0%;
     width: 200px;

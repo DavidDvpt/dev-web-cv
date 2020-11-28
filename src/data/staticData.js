@@ -60,4 +60,93 @@ export const formationsAndDiplomes = [
     },
 ];
 
-export const experiencesProfessionnelles = [{}];
+export const experiencesProfessionnelles = [
+    {
+        date: "2020-2021",
+        nom: "Wild Code School",
+        lieu: "Biarritz (64)",
+        contenu: [
+            {
+                projet: "Star-Burger",
+                technique: "HTML-CSS-JavaScript only + git",
+                lien:
+                    "https://wildcodeschool.github.io/btz_p1_star-burgers/index.html",
+                github: "",
+            },
+            {
+                projet: "World of Wildcraft",
+                technique: "100% front, React, bootstrap, API externe + git",
+                lien: "https://worldofwildcraft.netlify.app/",
+                github: "",
+            },
+            {
+                projet: "",
+                technique: "back & front, React, expressJs + git",
+                lien: "",
+                github: "",
+            },
+        ],
+    },
+    {
+        date: "2014",
+        nom: "e-Obs Technologies",
+        lieu: "Roanne (42)",
+        contenu: [
+            {
+                projet: "Ajout de Module CMS",
+                technique: "PHP MVC, MySQL, JS - tortoise",
+                lien: "",
+                github: "",
+            },
+            {
+                projet: "Ajout d'outil javascript",
+                technique: "google map API, javascript, PHP, MySQL",
+                lien: "",
+                github: "",
+            },
+        ],
+    },
+    {
+        date: "2013-2014",
+        nom: "AFPA",
+        lieu: "Pont-de-Claix (38)",
+        contenu: [
+            {
+                projet: "Gestion de fabrication de pistons",
+                technique: "Windows Forms, SQL Server, C#, .NET",
+                lien: "",
+                github: "",
+            },
+            {
+                projet: "Site e-commerce de vente de CD",
+                technique: "ASP.net, SQL Server, C#, .NET, web service",
+                lien: "",
+                github: "",
+            },
+        ],
+    },
+    {
+        date: "1993-2020",
+        nom: "TAL - Tissages d'Ameublement de la Loire",
+        contenu: [
+            {
+                projet: "CAO - croisement de fils",
+                technique: "Nedgraphics, Staubli, Dornier",
+                lien: "",
+                github: "",
+            },
+            {
+                projet: "Gestion de collections",
+                technique: "ordonnancement, stocks, ...",
+                lien: "",
+                github: "",
+            },
+            {
+                projet: "Maintenance informatique",
+                technique: "windows, reseau intranet, sauvegardes, ...",
+                lien: "",
+                github: "",
+            },
+        ],
+    },
+];
