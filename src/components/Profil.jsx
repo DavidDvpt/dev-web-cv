@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 function Profil({ className }) {
     return (
         <Container>
-            <h3>Profil</h3>
+            <h4>Profil</h4>
             <p className={className}>
                 Passionné par l’univers informatique et en particulier le web,
                 mes compétences ont étés acquises principalement par
