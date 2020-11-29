@@ -5,13 +5,17 @@ import {
     faUmbrellaBeach,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container } from "reactstrap";
+import { Row } from "reactstrap";
+
+import hobby from "../../images/hobby.png";
 
 function Interets() {
     return (
-        <Container>
-            <h4>Interets</h4>
-            <Container>
+        <Row>
+            <h4 className="titleColLeft col-8">
+                <img src={hobby} alt="profil" className="profilIcon" /> Profil
+            </h4>
+            <div>
                 <p>
                     <FontAwesomeIcon icon={faGamepad} size="2x" />
                     Entropia Universe, jeux d'aventures (Tomb Raider, Uncharted,
@@ -29,8 +33,8 @@ function Interets() {
                     <FontAwesomeIcon icon={faLaptopCode} size="2x" />
                     l'informatique et tout ce qui gravite autour
                 </p>
-            </Container>
-        </Container>
+            </div>
+        </Row>
     );
 }
 

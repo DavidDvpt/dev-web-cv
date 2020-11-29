@@ -1,9 +1,13 @@
-import { Container } from "reactstrap";
+import { Row } from "reactstrap";
+
+import profil from "../../images/profil.png";
 
 function Profil({ className }) {
     return (
-        <Container>
-            <h4>Profil</h4>
+        <Row>
+            <h4 className="titleColLeft col-8">
+                <img src={profil} alt="profil" className="profilIcon" /> Profil
+            </h4>
             <p className={className}>
                 Passionné par l’univers informatique et en particulier le web,
                 mes compétences ont étés acquises principalement par
@@ -13,7 +17,7 @@ function Profil({ className }) {
                 suis actuellement une formation axée web et mobile et prêt à
                 saisir toute opportunité dans les Pyrénées atlantiques
             </p>
-        </Container>
+        </Row>
     );
 }
 

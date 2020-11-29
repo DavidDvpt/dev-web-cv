@@ -21,21 +21,31 @@ function CompetencesInfo() {
                     size="5x"
                     className="col-3 my-2"
                 />
-                <FontAwesomeIcon icon={faJs} size="5x" className="col-3 my-2" />
+                <FontAwesomeIcon
+                    icon={faJs}
+                    size="5x"
+                    className="col-3 my-2"
+                    color="yellow"
+                />
                 <FontAwesomeIcon
                     icon={faReact}
                     size="5x"
                     className="col-3 my-2"
+                    color="cyan"
                 />
+
                 <FontAwesomeIcon
                     icon={faGitAlt}
                     size="5x"
                     className="col-3 my-2"
+                    color="orange"
                 />
+
                 <FontAwesomeIcon
                     icon={faPhp}
                     size="5x"
                     className="col-3 my-2"
+                    color="blue"
                 />
                 <FontAwesomeIcon
                     icon={faDatabase}
@@ -51,6 +61,7 @@ function CompetencesInfo() {
                     icon={faBootstrap}
                     size="5x"
                     className="col-3 my-2"
+                    color="dark blue"
                 />
             </div>
         </Container>

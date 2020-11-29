@@ -1,5 +1,5 @@
 import { Container } from "reactstrap";
-import { experiencesProfessionnelles } from "../data/staticData";
+import { experiencesProfessionnelles } from "../../data/staticData";
 import CvExperiencePro from "./CvExperiencePro";
 
 function CvExperiencesPro({ className }) {

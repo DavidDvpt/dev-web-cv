@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import photoProfil_200 from "../images/photoProfil_200.jpeg";
+import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 
 function EnTete() {
     return (

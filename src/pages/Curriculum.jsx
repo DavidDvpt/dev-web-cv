@@ -1,4 +1,4 @@
-import DownloadPdf from "../components/DownloadPdf";
+import DownloadPdf from "../components/Curriculum/DownloadPdf";
 
 function Curriculum() {
     return <DownloadPdf />;

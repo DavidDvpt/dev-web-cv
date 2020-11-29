@@ -12,23 +12,12 @@ body,
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*
-#root {
-    min-width: 1140px;
-}
-
- .container {
-    padding: 0px;
-    margin: 0px;
-}
-*/
 .curriculumContent {
     background-color: white;
     color: black;
 }
 .enTete {
     height: 200px;
-    padding: 5px;
 }
 .enTete p {
     margin: 0px;
@@ -44,15 +33,7 @@ body,
 .avatar-container {
     background-color: grey;
 }
-/*
-.enTete-container-text {
-    width: 100%;
-}
 
-.enTete-container-text p {
-    margin: 0px;
-}
-*/
 .avatar-container {
     border-radius: 0% 50% 50% 0%;
 }
@@ -63,10 +44,39 @@ body,
     width: 100%;
 }
 
-/* .groupInfos {
+.leftColumn {
+    /* border-radius: 50%; */
+}
+
+.width-10 {
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
     background-color: grey;
-    border-radius: 0% 50% 0px 0px;
-} */
+}
+
+.profilIcon {
+    border-radius: 50%;
+    width: 48px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.titleColLeft {
+    transform: translateX(-36px);
+    background-color: black;
+    color: white;
+    margin: 10px 0px;
+    padding-left: 5px;
+    border-radius: 0px 100px 100px 0%;
+}
 /* 
     NavBar
 */
