@@ -80,7 +80,14 @@ export const experiencesProfessionnelles = [
                 github: "https://github.com/DavidDvpt/btz-0920-p2-wow",
             },
             {
-                projet: "",
+                projet: "Hackathon 24h - Viking-invasion",
+                technique: "100% front, React, bootstrap, API externe + git",
+                lien: "",
+                github:
+                    "https://github.com/TheodoreLefrancois/vikings-invasion",
+            },
+            {
+                projet: "Projet à venir",
                 technique: "back & front, React, expressJs + git",
                 lien: "",
                 github: "",

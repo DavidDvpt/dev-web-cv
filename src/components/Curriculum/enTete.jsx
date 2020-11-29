@@ -1,23 +1,24 @@
-import { Container } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faMapMarkerAlt,
     faAt,
     faPhone,
     faBirthdayCake,
-    faCar,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import photoProfil_200 from "../images/photoProfil_200.jpeg";
+import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 
 function EnTete() {
     return (
-        <Container className="enTete d-flex">
-            <Container className="enTete-container-text">
-                <h1 className="pl-2 mb-0">MOSCA David</h1>
-                <Container className="d-flex">
-                    <div className="pl-2 mt-2 col-4">
+        <Row className="enTete">
+            <Col className="text-container grey">
+                <Row>
+                    <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
+                </Row>
+                <Row className="">
+                    <Col className="col-4 pr-0">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faBirthdayCake}
@@ -52,16 +53,8 @@ function EnTete() {
                                 david.mosca69@gmail.com
                             </a>
                         </p>
-                        <p className="">
-                            <FontAwesomeIcon
-                                icon={faCar}
-                                size="1x"
-                                className="mr-2"
-                            />
-                            Permis B, véhicule
-                        </p>
-                    </div>
-                    <div className="pl-2 mt-2 col-3">
+                    </Col>
+                    <Col className="col-3 p-0">
                         <p className="">
                             <FontAwesomeIcon
                                 icon={faGithub}
@@ -80,20 +73,24 @@ function EnTete() {
                                 david-mosca
                             </a>
                         </p>
-                    </div>
-                    <h2 className="pl-2 mb-0 text-right col-5 align-self-end">
-                        Développeur web junior
-                    </h2>
-                </Container>
-            </Container>
-            <Container className="avatar-container">
+                    </Col>
+                </Row>
+                <Row className="">
+                    <Col>
+                        <h2 className="font-weight-bold text-right mt-2">
+                            Développeur web junior
+                        </h2>
+                    </Col>
+                </Row>
+            </Col>
+            <Col md="auto" className="avatar-container grey pr-0">
                 <img
                     src={photoProfil_200}
                     alt="avatar"
-                    className="avatar p-0 m-0 h-100"
+                    className="avatar rounded-circle"
                 />
-            </Container>
-        </Container>
+            </Col>
+        </Row>
     );
 }
 
