@@ -3,7 +3,7 @@ import CvContenuExperiencePro from "./CvContenuExperiencePro";
 
 function CvExperiencePro({ experiencePro }) {
     return (
-        <Col className="col-12">
+        <Col className="col-12 mb-4">
             <Row>
                 <h5 className="col">
                     {experiencePro.date} - {experiencePro.nom}

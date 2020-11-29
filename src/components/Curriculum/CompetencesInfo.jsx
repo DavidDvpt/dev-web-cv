@@ -4,7 +4,7 @@ import {
     faNodeJs,
     faGitAlt,
     faJs,
-    faLinux,
+    faUbuntu,
     faBootstrap,
     faPhp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -26,48 +26,51 @@ function CompetencesInfo() {
                     icon={faNodeJs}
                     size="5x"
                     className="col-3 my-2"
+                    color="#88c043"
                 />
                 <FontAwesomeIcon
                     icon={faJs}
                     size="5x"
                     className="col-3 my-2"
-                    color="yellow"
+                    color="#f7df1e"
                 />
                 <FontAwesomeIcon
                     icon={faReact}
                     size="5x"
                     className="col-3 my-2"
-                    color="cyan"
+                    color="	#61dafb"
                 />
 
                 <FontAwesomeIcon
                     icon={faGitAlt}
                     size="5x"
                     className="col-3 my-2"
-                    color="orange"
+                    color="#f05033"
                 />
 
                 <FontAwesomeIcon
                     icon={faPhp}
                     size="5x"
                     className="col-3 my-2"
-                    color="blue"
+                    color="#8993c1"
                 />
                 <FontAwesomeIcon
                     icon={faDatabase}
                     size="5x"
                     className="col-3 my-2"
+                    color="#ffa500"
                 />
                 <FontAwesomeIcon
-                    icon={faLinux}
+                    icon={faUbuntu}
                     size="5x"
                     className="col-3 my-2"
+                    color="#ff5e09"
                 />
                 <FontAwesomeIcon
                     icon={faBootstrap}
                     size="5x"
                     className="col-3 my-2"
-                    color="dark blue"
+                    color="#563d7c"
                 />
             </div>
         </Row>
