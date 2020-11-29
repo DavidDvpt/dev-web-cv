@@ -15,15 +15,15 @@ class CurriculumContent extends Component {
         return (
             <Container className="curriculumContent">
                 <EnTete />
-                <Row className="">
-                    <LeftColumn className="col-6 mt-3">
+                <Row className="mt-3">
+                    <LeftColumn className="col-6">
                         <Profil className="pl-5" />
                         <CvFormations />
                         <Langues />
                         <Interets />
                         <CvAutre />
                     </LeftColumn>
-                    <Col className="col-6 mt-3">
+                    <Col className="col-6">
                         <CompetencesInfo />
                         <CvExperiencesPro className="" />
                     </Col>

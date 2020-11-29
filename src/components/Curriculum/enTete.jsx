@@ -1,4 +1,4 @@
-import { Col, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faMapMarkerAlt,
@@ -13,7 +13,7 @@ import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 function EnTete() {
     return (
         <Row className="enTete">
-            <Col className="enTete-container-text col-10 h-100">
+            <Col className="grey">
                 <Row>
                     <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
                 </Row>
@@ -75,12 +75,20 @@ function EnTete() {
                         </p>
                     </Col>
                 </Row>
-                <Row className="p-0 justify-content-end">
-                    <h2 className="font-weight-bold">Développeur web junior</h2>
+                <Row className="">
+                    <Col>
+                        <h2 className="font-weight-bold text-right mt-2">
+                            Développeur web junior
+                        </h2>
+                    </Col>
                 </Row>
             </Col>
-            <Col className="avatar-container col-2 h-100 p-0 d-flex align-items-center">
-                <img src={photoProfil_200} alt="avatar" className="avatar" />
+            <Col md="auto" className="avatar-container grey pr-0">
+                <img
+                    src={photoProfil_200}
+                    alt="avatar"
+                    className="avatar rounded-circle"
+                />
             </Col>
         </Row>
     );

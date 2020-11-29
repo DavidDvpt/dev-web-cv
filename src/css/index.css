@@ -17,7 +17,8 @@ body,
     color: black;
 }
 .enTete {
-    height: 200px;
+    /* height: 200px; */
+    /* padding: 0px 15px; */
 }
 .enTete p {
     margin: 0px;
@@ -29,19 +30,14 @@ body,
     text-decoration: none;
 }
 
-.enTete-container-text,
-.avatar-container {
-    background-color: grey;
-}
-
 .avatar-container {
     border-radius: 0% 50% 50% 0%;
 }
 
 .avatar {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 5px solid grey;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .leftColumn {
@@ -49,7 +45,7 @@ body,
 }
 
 .width-10 {
-    width: 10px;
+    width: 15px;
     padding: 0px;
     margin: 0px;
 }
@@ -70,11 +66,11 @@ body,
 }
 
 .titleColLeft {
-    transform: translateX(-36px);
+    transform: translateX(-31px);
     background-color: black;
     color: white;
     margin: 10px 0px;
-    padding-left: 5px;
+    padding-left: 0px;
     border-radius: 0px 100px 100px 0%;
 }
 /* 
@@ -122,5 +118,9 @@ nav {
 @media print {
     @page {
         size: A4 portrait;
+    }
+
+    .titleColLeft {
+        transform: translateX(0px);
     }
 }
