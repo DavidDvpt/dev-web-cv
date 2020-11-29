@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faMapMarkerAlt,
@@ -13,7 +13,7 @@ import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 function EnTete() {
     return (
         <Row className="enTete">
-            <Col className="grey">
+            <Col className="text-container grey">
                 <Row>
                     <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
                 </Row>

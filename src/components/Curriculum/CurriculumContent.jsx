@@ -17,7 +17,7 @@ class CurriculumContent extends Component {
                 <EnTete />
                 <Row className="mt-3">
                     <LeftColumn className="col-6">
-                        <Profil className="pl-5" />
+                        <Profil className="p-0" />
                         <CvFormations />
                         <Langues />
                         <Interets />

@@ -1,15 +1,22 @@
-import { Container } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { experiencesProfessionnelles } from "../../data/staticData";
 import CvExperiencePro from "./CvExperiencePro";
 
+import question from "../../images/question.png";
+
 function CvExperiencesPro({ className }) {
     return (
-        <Container className={className}>
-            <h4>Experience professionnelle</h4>
+        <Row className={className}>
+            <Col>
+                <h4 className="titleColRight col-12">
+                    <img src={question} alt="profil" className="profilIcon" />{" "}
+                    Experience professionnelle
+                </h4>
+            </Col>
             {experiencesProfessionnelles.map((exp) => (
                 <CvExperiencePro experiencePro={exp} />
             ))}
-        </Container>
+        </Row>
     );
 }
 

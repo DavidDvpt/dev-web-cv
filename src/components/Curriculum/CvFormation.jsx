@@ -1,15 +1,17 @@
-import { Container } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 function CvFormation({ formation, className }) {
     return (
-        <Container className={`d-flex flex-column ${className}`}>
-            <h5>
-                {formation.date} - {formation.nom}
-            </h5>
-            <p>
+        <Col className={`${className} col-12 mb-2`}>
+            <Row>
+                <h5>
+                    {formation.date} - {formation.nom}
+                </h5>
+            </Row>
+            <Row className="pl-4">
                 {formation.ecole} - {formation.lieu}
-            </p>
-        </Container>
+            </Row>
+        </Col>
     );
 }
 
