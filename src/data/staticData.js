@@ -87,7 +87,7 @@ export const experiencesProfessionnelles = [
                     "https://github.com/TheodoreLefrancois/vikings-invasion",
             },
             {
-                projet: "Projet à venir",
+                projet: "tre6clope",
                 technique: "back & front, React, expressJs + git",
                 lien: "",
                 github: "",
