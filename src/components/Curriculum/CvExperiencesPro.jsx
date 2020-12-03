@@ -8,7 +8,7 @@ function CvExperiencesPro({ className }) {
     return (
         <Row className={className}>
             <Col>
-                <h4 className="titleColRight col-12">
+                <h4 className="titleColRight col-10">
                     <img src={question} alt="profil" className="profilIcon" />{" "}
                     Experience professionnelle
                 </h4>
