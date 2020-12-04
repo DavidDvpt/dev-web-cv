@@ -71,7 +71,7 @@ export const experiencesProfessionnelles = [
                 technique: "HTML-CSS-JavaScript only + git",
                 lien:
                     "https://wildcodeschool.github.io/btz_p1_star-burgers/index.html",
-                github: "",
+                github: "https://github.com/DavidDvpt/btz_p1_star-burgers",
             },
             {
                 projet: "World of Wildcraft",
@@ -82,7 +82,7 @@ export const experiencesProfessionnelles = [
             {
                 projet: "Hackathon 24h - Viking-invasion",
                 technique: "100% front, React, bootstrap, API externe + git",
-                lien: "",
+                lien: "https://viking-invasion.netlify.app/",
                 github:
                     "https://github.com/TheodoreLefrancois/vikings-invasion",
             },

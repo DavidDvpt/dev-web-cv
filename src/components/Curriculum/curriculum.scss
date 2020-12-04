@@ -1,0 +1,69 @@
+$backgroundPrimary: white;
+$backgroundSecondary: grey;
+$backgroundTitle: red;
+
+$fontColorPrimary: black;
+$fontColorSecondary: white;
+
+.curriculumContent {
+    height: 100%;
+    background-color: $backgroundPrimary;
+}
+
+.enTete p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.enTete a {
+    color: $fontColorPrimary;
+    text-decoration: none;
+}
+
+.avatar-container {
+    border-radius: 0% 50% 50% 0%;
+}
+
+.avatar {
+    /* border-radius: 50%; */
+    border: 5px solid $backgroundSecondary;
+    /* width: 100%; */
+}
+
+.width-10 {
+    width: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grey {
+    background-color: $backgroundSecondary;
+}
+
+.red {
+    background-color: $backgroundTitle;
+}
+
+.profilIcon {
+    border-radius: 50%;
+    width: 48px;
+    background-color: $backgroundPrimary;
+    margin-right: 5px;
+}
+
+.titleColLeft {
+    transform: translateX(-61px);
+    background-color: $backgroundTitle;
+    color: $fontColorSecondary;
+    margin: 10px 0px;
+    padding-left: 0px;
+    border-radius: 0px 100px 100px 0%;
+}
+
+.titleColRight {
+    background-color: $backgroundTitle;
+    color: $fontColorSecondary;
+    margin: 10px 0px;
+    padding-left: 0px;
+    border-radius: 0px 100px 100px 0%;
+}

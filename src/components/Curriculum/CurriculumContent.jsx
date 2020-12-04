@@ -9,6 +9,7 @@ import Interets from "./Interets";
 import CvAutre from "./CvAutre";
 import { Component } from "react";
 import LeftColumn from "./LeftColumn";
+import "./curriculum.scss";
 
 class CurriculumContent extends Component {
     render() {
