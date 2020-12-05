@@ -8,9 +8,9 @@ function CvExperiencesPro({ className }) {
     return (
         <Row className={className}>
             <Col>
-                <h4 className="titleColRight col-12">
+                <h4 className="title col-10">
                     <img src={question} alt="profil" className="profilIcon" />{" "}
-                    Experience professionnelle
+                    Expérience professionnelle
                 </h4>
             </Col>
             {experiencesProfessionnelles.map((exp) => (

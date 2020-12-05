@@ -6,7 +6,7 @@ function Langues() {
     return (
         <Row>
             <Col>
-                <h4 className="titleColLeft col-10">
+                <h4 className="title titleColLeft col-10">
                     <img src={language} alt="profil" className="profilIcon" />{" "}
                     Langues
                 </h4>

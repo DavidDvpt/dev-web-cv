@@ -1,0 +1,79 @@
+$backgroundPrimary: white;
+$backgroundSecondary: rgb(78, 74, 74);
+$backgroundTernary: rgb(30, 212, 121);
+$backgroundTitle: red;
+
+$fontColorPrimary: black;
+$fontColorSecondary: white;
+
+.curriculumContent {
+    height: 100%;
+    background-color: $backgroundPrimary;
+}
+
+.enTete p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.enTete a {
+    color: $fontColorPrimary;
+    text-decoration: none;
+}
+
+.avatar-container {
+    border-radius: 0% 50% 50% 0%;
+    background-color: $backgroundTernary;
+}
+
+.avatar {
+    border: 5px solid $backgroundTernary;
+}
+
+.width-10 {
+    width: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bgd-primary {
+    background-color: $backgroundPrimary;
+}
+
+.bgd-secondary {
+    background-color: $backgroundSecondary;
+}
+
+.bgd-ternary {
+    background-color: $backgroundTernary;
+}
+
+.profilIcon {
+    border-radius: 50%;
+    width: 48px;
+    background-color: $backgroundPrimary;
+    margin-right: 5px;
+}
+
+.title {
+    background-color: $backgroundTernary;
+    color: $fontColorPrimary;
+    margin: 10px 0px;
+    padding-left: 0px !important;
+    border-radius: 0px 100px 100px 0%;
+}
+.titleColLeft {
+    transform: translateX(-61px);
+}
+
+.leftColumn {
+    background-color: $backgroundSecondary;
+    border-radius: 0% 200px 0% 0%;
+    color: $fontColorSecondary;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+}

@@ -19,8 +19,6 @@ body,
     height: 100%;
 }
 .enTete {
-    /* height: 200px; */
-    /* padding: 0px 15px; */
 }
 .enTete p {
     margin: 0px;
@@ -131,11 +129,11 @@ nav {
     }
 
     .avatar-container {
-        width: 200px;
+        width: 600px;
     }
 
     .enTete {
-        width: 100%;
+        width: 50%;
     }
 
     .grey {
