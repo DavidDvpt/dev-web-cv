@@ -2,14 +2,14 @@ import { Col, Row } from "reactstrap";
 
 function LeftColumn({ children, className }) {
     return (
-        <Col className={`leftColumn ${className}`}>
+        <div className={`leftColumn ${className}`}>
             <Row>
-                <div className="width-10 grey" />
-                <div className="width-10 white" />
-                <div className="width-10 grey" />
-                <Col className="grey">{children}</Col>
+                <div className="width-10 bgd-secondary" />
+                <div className="width-10 bgd-primary" />
+                <div className="width-10 bgd-secondary" />
+                <Col className="leftColumnContent">{children}</Col>
             </Row>
-        </Col>
+        </div>
     );
 }
 

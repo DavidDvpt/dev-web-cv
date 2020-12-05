@@ -10,7 +10,7 @@ function CvFormations() {
         <Row className="">
             <Col>
                 {" "}
-                <h4 className="titleColLeft col-10">
+                <h4 className="title titleColLeft col-10">
                     <img src={hat} alt="profil" className="profilIcon" />
                     &nbsp;Formations et diplômes
                 </h4>

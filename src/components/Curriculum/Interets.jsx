@@ -13,7 +13,7 @@ function Interets() {
     return (
         <Row>
             <Col>
-                <h4 className="titleColLeft col-10">
+                <h4 className="title titleColLeft col-10">
                     <img src={hobby} alt="profil" className="profilIcon" />{" "}
                     Intérets
                 </h4>

@@ -1,5 +1,6 @@
 $backgroundPrimary: white;
-$backgroundSecondary: grey;
+$backgroundSecondary: rgb(78, 74, 74);
+$backgroundTernary: rgb(30, 212, 121);
 $backgroundTitle: red;
 
 $fontColorPrimary: black;
@@ -22,11 +23,12 @@ $fontColorSecondary: white;
 
 .avatar-container {
     border-radius: 0% 50% 50% 0%;
+    background-color: $backgroundTernary;
 }
 
 .avatar {
     /* border-radius: 50%; */
-    border: 5px solid $backgroundSecondary;
+    border: 5px solid $backgroundTernary;
     /* width: 100%; */
 }
 
@@ -36,12 +38,16 @@ $fontColorSecondary: white;
     margin: 0px;
 }
 
-.grey {
+.bgd-primary {
+    background-color: $backgroundPrimary;
+}
+
+.bgd-secondary {
     background-color: $backgroundSecondary;
 }
 
-.red {
-    background-color: $backgroundTitle;
+.bgd-ternary {
+    background-color: $backgroundTernary;
 }
 
 .profilIcon {
@@ -51,19 +57,37 @@ $fontColorSecondary: white;
     margin-right: 5px;
 }
 
-.titleColLeft {
-    transform: translateX(-61px);
-    background-color: $backgroundTitle;
-    color: $fontColorSecondary;
+.title {
+    background-color: $backgroundTernary;
+    color: $fontColorPrimary;
     margin: 10px 0px;
-    padding-left: 0px;
+    padding-left: 0px !important;
     border-radius: 0px 100px 100px 0%;
 }
+.titleColLeft {
+    transform: translateX(-61px);
+}
 
-.titleColRight {
-    background-color: $backgroundTitle;
+.leftColumn {
+    background-color: $backgroundSecondary;
+    border-radius: 0% 200px 0% 0%;
     color: $fontColorSecondary;
-    margin: 10px 0px;
-    padding-left: 0px;
-    border-radius: 0px 100px 100px 0%;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+
+    .avatar-container {
+        width: 200px;
+    }
+
+    .enTete {
+        width: 100%;
+    }
+
+    .grey {
+        background-color: rgb(173, 172, 172);
+    }
 }

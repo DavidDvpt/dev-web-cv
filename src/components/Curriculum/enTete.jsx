@@ -13,7 +13,7 @@ import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 function EnTete() {
     return (
         <Row className="enTete">
-            <Col className="text-container grey">
+            <Col className="bgd-ternary">
                 <Row>
                     <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
                 </Row>
@@ -83,7 +83,7 @@ function EnTete() {
                     </Col>
                 </Row>
             </Col>
-            <Col md="auto" className="avatar-container grey pr-0">
+            <Col md="auto" className="avatar-container pr-0">
                 <img
                     src={photoProfil_200}
                     alt="avatar"

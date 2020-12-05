@@ -17,7 +17,7 @@ function CompetencesInfo() {
         <>
             <Row>
                 <Col>
-                    <h4 className="titleColRight col-10">
+                    <h4 className="title col-10">
                         <img
                             src={question}
                             alt="profil"
