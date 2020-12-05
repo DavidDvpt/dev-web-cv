@@ -36,6 +36,11 @@ $fontColorSecondary: white;
     margin: 0px;
 }
 
+.badge-pill {
+    background-color: $backgroundSecondary;
+    color: $fontColorSecondary;
+}
+
 .bgd-primary {
     background-color: $backgroundPrimary;
 }
@@ -70,6 +75,11 @@ $fontColorSecondary: white;
     background-color: $backgroundSecondary;
     border-radius: 0% 200px 0% 0%;
     color: $fontColorSecondary;
+}
+
+.comp-info-icon {
+    width: 32px;
+    height: 32px;
 }
 
 @media print {
