@@ -29,7 +29,7 @@ function CompetencesInfo() {
                     </h4>
                 </Col>
             </Row>
-            <Row className="my-2">
+            <Row className="mb-3">
                 <h6 className="col-3 my-auto">Hard skill</h6>
                 <Row className="col-9 pl-0">
                     <FontAwesomeIcon
@@ -70,7 +70,7 @@ function CompetencesInfo() {
                     />
                 </Row>
             </Row>
-            <Row className="my-2">
+            <Row className="mb-3">
                 <h6 className="col-3 my-auto">Soft skill</h6>
                 <p className="row col-9 pl-0 my-auto">
                     <span className="badge-pill mx-1">Curieux</span>
@@ -79,7 +79,7 @@ function CompetencesInfo() {
                     <span className="badge-pill mx-1">Pertinent</span>
                 </p>
             </Row>
-            <Row className="my-2">
+            <Row className="mb-3">
                 <h6 className="col-3 my-auto">Environnement</h6>
                 <p className="col-9 pl-0 my-auto row align-items-center">
                     <FontAwesomeIcon
