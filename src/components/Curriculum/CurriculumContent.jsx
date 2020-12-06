@@ -24,10 +24,10 @@ class CurriculumContent extends Component {
                         <Interets />
                         <CvAutre />
                     </LeftColumn>
-                    <Col className="col-6">
+                    <div className="right-column col-6">
                         <CompetencesInfo />
-                        <CvExperiencesPro className="" />
-                    </Col>
+                        <CvExperiencesPro />
+                    </div>
                 </Row>
             </Container>
         );

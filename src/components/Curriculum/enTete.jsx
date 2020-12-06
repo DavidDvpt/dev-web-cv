@@ -61,7 +61,12 @@ function EnTete() {
                                 size="1x"
                                 className="mr-2"
                             />
-                            <a href="https://github.com/DavidDvpt">DavidDvpt</a>
+                            <a
+                                href="https://github.com/DavidDvpt"
+                                target="_blank"
+                            >
+                                DavidDvpt
+                            </a>
                         </p>
                         <p className="">
                             <FontAwesomeIcon
@@ -69,7 +74,10 @@ function EnTete() {
                                 size="1x"
                                 className="mr-2"
                             />
-                            <a href="https://www.linkedin.com/in/david-mosca/">
+                            <a
+                                href="https://www.linkedin.com/in/david-mosca/"
+                                target="_blank"
+                            >
                                 david-mosca
                             </a>
                         </p>
