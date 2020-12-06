@@ -13,8 +13,8 @@ function CvExperiencesPro({ className }) {
                     Expérience professionnelle
                 </h4>
             </Col>
-            {experiencesProfessionnelles.map((exp) => (
-                <CvExperiencePro experiencePro={exp} />
+            {experiencesProfessionnelles.map((exp, i) => (
+                <CvExperiencePro key={exp.nom.concat(i)} experiencePro={exp} />
             ))}
         </Row>
     );

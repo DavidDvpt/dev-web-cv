@@ -29,8 +29,8 @@ function CvContenuExperiencePro({ elmt }) {
             </h6>
             <p className="m-0">{elmt.description}</p>
             <p className="my-auto ml-2">
-                {elmt.technique.map((t) => (
-                    <IconTechnique key={elmt.projet} technique={t} />
+                {elmt.technique.map((t, i) => (
+                    <IconTechnique key={elmt.projet.concat(i)} technique={t} />
                 ))}
             </p>
         </li>
