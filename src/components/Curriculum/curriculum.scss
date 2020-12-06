@@ -1,7 +1,6 @@
 $backgroundPrimary: white;
 $backgroundSecondary: rgb(78, 74, 74);
 $backgroundTernary: rgb(30, 212, 121);
-$backgroundTitle: red;
 
 $fontColorPrimary: black;
 $fontColorSecondary: white;
@@ -82,6 +81,10 @@ $fontColorSecondary: white;
     background-color: $backgroundSecondary;
     border-radius: 0% 200px 0% 0%;
     color: $fontColorSecondary;
+}
+
+.right-column {
+    background-color: $backgroundPrimary;
 }
 
 .comp-info-icon {

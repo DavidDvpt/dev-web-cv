@@ -1,12 +1,10 @@
 $background_Primary: #0e0441;
-$background_Secondary: grey;
 $background_Ternary: white;
-$background_Title: red;
 
 $font_color_Primary: black;
 $font_color_Secondary: white;
 
-$font_Intro: yellow;
+$fontIntro: yellow;
 
 /* bien mettre height 100% à toutes les balises parentes ici html, body, et #root de react*/
 html,
@@ -20,6 +18,7 @@ body,
     background-color: $background_Primary;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 100%;
 }
 
 /* 
@@ -34,11 +33,11 @@ nav {
 
 .letter {
     font-size: 5em;
-    color: font_Intro;
+    color: $fontIntro;
 }
 
 .introProfession {
-    color: font_intro;
+    color: $fontIntro;
     font-size: 2em;
     text-align: right;
 }
@@ -55,7 +54,7 @@ nav {
 *   Formations
 */
 .formation {
-    border: 1px solid background_Ternary;
+    border: 1px solid $background_Ternary;
     background-color: rgb(35, 15, 128);
     border-radius: 5px;
     margin: 0.5em 0em;
