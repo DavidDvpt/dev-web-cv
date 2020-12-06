@@ -68,27 +68,41 @@ export const experiencesProfessionnelles = [
         contenu: [
             {
                 projet: "Star-Burger",
-                technique: "HTML-CSS-JavaScript only + git",
+                description: "Site de burger façon 3 etoiles",
+                technique: ["html", "css", "javascript", "git"],
                 lien:
                     "https://wildcodeschool.github.io/btz_p1_star-burgers/index.html",
                 github: "https://github.com/DavidDvpt/btz_p1_star-burgers",
             },
             {
                 projet: "World of Wildcraft",
-                technique: "100% front, React, bootstrap, API externe + git",
+                description:
+                    "Recherche de guilde et de joueur de WoW à haut ranking",
+                technique: ["react", "bootstrap", "reactstrap", "axios", "git"],
                 lien: "https://worldofwildcraft.netlify.app/",
                 github: "https://github.com/DavidDvpt/btz-0920-p2-wow",
             },
             {
                 projet: "Hackathon 24h - Viking-invasion",
-                technique: "100% front, React, bootstrap, API externe + git",
+                description:
+                    '"Back to the future" Outil pour aider les viking dans leurs pillages',
+                technique: ["react", "bootstrap", "reactstrap", "axios", "git"],
                 lien: "https://viking-invasion.netlify.app/",
                 github:
                     "https://github.com/TheodoreLefrancois/vikings-invasion",
             },
             {
                 projet: "tre6clope",
-                technique: "back & front, React, expressJs + git",
+                description:
+                    "Application admin et client pour l'association 'Tree6clope'",
+                technique: [
+                    "nodejs",
+                    "react",
+                    "expressjs",
+                    "materialui",
+                    "mysql",
+                    "prisma",
+                ],
                 lien: "",
                 github: "",
             },
@@ -101,13 +115,18 @@ export const experiencesProfessionnelles = [
         contenu: [
             {
                 projet: "Ajout de Module CMS",
-                technique: "PHP MVC, MySQL, JS - tortoise",
+                description:
+                    "Module permettant l'affectation de vehicules et de livreurs à toute commande passée en magasin ainsi que la gestion du planning",
+
+                technique: ["php", "MVC", "mysql", "javascript", "tortoise"],
                 lien: "",
                 github: "",
             },
             {
                 projet: "Ajout d'outil javascript",
-                technique: "google map API, javascript, PHP, MySQL",
+                description:
+                    "DAL de gestion de google map API pour intégrer l'itinéraire à l'outil de livraison des commandes",
+                technique: ["javascript", "php", "mysql", "google map API"],
                 lien: "",
                 github: "",
             },
@@ -120,13 +139,17 @@ export const experiencesProfessionnelles = [
         contenu: [
             {
                 projet: "Gestion de fabrication de pistons",
-                technique: "Windows Forms, SQL Server, C#, .NET",
+                description:
+                    "Gestion de qualité des pistons avec utilisation de rôles utilisateurs",
+                technique: ["Windows Forms", "sqlserver", "c#", "net"],
                 lien: "",
                 github: "",
             },
             {
                 projet: "Site e-commerce de vente de CD",
-                technique: "ASP.net, SQL Server, C#, .NET, web service",
+                description:
+                    "Gestion de l'identification, du catalogue, du panier, de la commande et du paiement par web service",
+                technique: ["aspnet", "sqlserver", "c#", "net", "Web Service"],
                 lien: "",
                 github: "",
             },
@@ -138,19 +161,27 @@ export const experiencesProfessionnelles = [
         contenu: [
             {
                 projet: "CAO - croisement de fils",
-                technique: "Nedgraphics, Staubli, Dornier",
+                description:
+                    "Adaptation des esquisses papier en fichier informatique pour mécanique Jacquard",
+                // technique: ["Nedgraphics", "Staubli", "Dornier"],
+                technique: [],
                 lien: "",
                 github: "",
             },
-            {
-                projet: "Gestion de collections",
-                technique: "ordonnancement, stocks, ...",
-                lien: "",
-                github: "",
-            },
+            // {
+            //     projet: "Gestion de collections",
+            //     description:
+            //         "Processus complet du dessin papier au produit fini sur robrack",
+            //     technique: ["Ordonnancement", "Stocks", "Prix"],
+            //     lien: "",
+            //     github: "",
+            // },
             {
                 projet: "Maintenance informatique",
-                technique: "windows, reseau intranet, sauvegardes, ...",
+                description:
+                    "Petite maintenance et interlocuteur des prestataires informatiques",
+                // technique: ["windows", "intranet", "sauvegardes"],
+                technique: [],
                 lien: "",
                 github: "",
             },

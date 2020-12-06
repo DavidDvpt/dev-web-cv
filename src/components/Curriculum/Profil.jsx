@@ -4,7 +4,7 @@ import profil from "../../images/profil.png";
 
 function Profil({ className }) {
     return (
-        <Row>
+        <Row className="mb-2">
             <Col>
                 <h4 className="title titleColLeft col-10">
                     <img src={profil} alt="profil" className="profilIcon" />{" "}

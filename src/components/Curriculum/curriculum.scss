@@ -40,6 +40,13 @@ $fontColorSecondary: white;
     background-color: $backgroundSecondary;
     color: $fontColorSecondary;
 }
+.badge-pill-exp-prof {
+    background-color: rgb(207, 205, 205);
+    padding-bottom: 2px;
+    color: $fontColorPrimary;
+    border: 1px solid black !important;
+    color: $fontColorPrimary !important;
+}
 
 .bgd-primary {
     background-color: $backgroundPrimary;
@@ -63,7 +70,7 @@ $fontColorSecondary: white;
 .title {
     background-color: $backgroundTernary;
     color: $fontColorPrimary;
-    margin: 20px 0px;
+    margin: 10px 0px;
     padding-left: 0px !important;
     border-radius: 0px 100px 100px 0%;
 }
@@ -80,6 +87,14 @@ $fontColorSecondary: white;
 .comp-info-icon {
     width: 32px;
     height: 32px;
+}
+
+.exp-info-icon {
+    width: 24px;
+    height: 24px;
+}
+.express-js {
+    height: 24px;
 }
 
 @media print {

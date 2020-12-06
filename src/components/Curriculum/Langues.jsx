@@ -4,7 +4,7 @@ import language from "../../images/language.png";
 
 function Langues() {
     return (
-        <Row>
+        <Row className="mb-2">
             <Col>
                 <h4 className="title titleColLeft col-10">
                     <img src={language} alt="profil" className="profilIcon" />{" "}
