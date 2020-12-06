@@ -7,7 +7,7 @@ function CvFormations() {
     const formations = formationsAndDiplomes;
 
     return (
-        <Row className="">
+        <Row className="mb-2">
             <Col>
                 {" "}
                 <h4 className="title titleColLeft col-10">

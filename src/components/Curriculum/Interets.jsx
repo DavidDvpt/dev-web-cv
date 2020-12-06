@@ -13,7 +13,7 @@ import hobby from "../../images/hobby.png";
 function Interets() {
     return (
         <>
-            <Row>
+            <Row className="mb-2">
                 <Col>
                     <h4 className="title titleColLeft col-10">
                         <img src={hobby} alt="profil" className="profilIcon" />{" "}
