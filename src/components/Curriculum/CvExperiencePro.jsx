@@ -11,8 +11,13 @@ function CvExperiencePro({ experiencePro }) {
             </Row>
             <Row className="col">
                 <ul className="mb-0">
-                    {experiencePro.contenu.map((elmt) => {
-                        return <CvContenuExperiencePro elmt={elmt} />;
+                    {experiencePro.contenu.map((elmt, i) => {
+                        return (
+                            <CvContenuExperiencePro
+                                key={elmt.projet.concat(i)}
+                                elmt={elmt}
+                            />
+                        );
                     })}
                 </ul>
             </Row>

@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import question from "../../images/question.png";
 import vsCode from "../../images/Visual_Studio.png";
+import code from "../../images/code.png";
 import windows from "../../images/windows.png";
 
 function CompetencesInfo() {
@@ -20,11 +20,7 @@ function CompetencesInfo() {
             <Row>
                 <Col>
                     <h4 className="title col-10">
-                        <img
-                            src={question}
-                            alt="profil"
-                            className="profilIcon"
-                        />{" "}
+                        <img src={code} alt="profil" className="profilIcon" />{" "}
                         Compétences informatiques
                     </h4>
                 </Col>

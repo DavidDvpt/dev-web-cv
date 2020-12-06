@@ -16,8 +16,12 @@ function CvFormations() {
                 </h4>
             </Col>
 
-            {formations.map((f) => (
-                <CvFormation formation={f} className="px-3 pb-0" />
+            {formations.map((f, i) => (
+                <CvFormation
+                    key={f.nom.concat(i)}
+                    formation={f}
+                    className="px-3 pb-0"
+                />
             ))}
         </Row>
     );
