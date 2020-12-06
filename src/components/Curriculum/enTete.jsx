@@ -13,7 +13,7 @@ import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 function EnTete() {
     return (
         <Row className="enTete">
-            <Col className="text-container grey">
+            <Col className="text-container bgd-ternary">
                 <Row>
                     <h1 className="pl-2 mb-0 font-weight-bold">MOSCA David</h1>
                 </Row>
@@ -61,7 +61,12 @@ function EnTete() {
                                 size="1x"
                                 className="mr-2"
                             />
-                            <a href="https://github.com/DavidDvpt">DavidDvpt</a>
+                            <a
+                                href="https://github.com/DavidDvpt"
+                                target="_blank"
+                            >
+                                DavidDvpt
+                            </a>
                         </p>
                         <p className="">
                             <FontAwesomeIcon
@@ -69,7 +74,10 @@ function EnTete() {
                                 size="1x"
                                 className="mr-2"
                             />
-                            <a href="https://www.linkedin.com/in/david-mosca/">
+                            <a
+                                href="https://www.linkedin.com/in/david-mosca/"
+                                target="_blank"
+                            >
                                 david-mosca
                             </a>
                         </p>
@@ -83,7 +91,7 @@ function EnTete() {
                     </Col>
                 </Row>
             </Col>
-            <Col md="auto" className="avatar-container grey pr-0">
+            <Col className="avatar-container flex-grow-0 pr-0">
                 <img
                     src={photoProfil_200}
                     alt="avatar"

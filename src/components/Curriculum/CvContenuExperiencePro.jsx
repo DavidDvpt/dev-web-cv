@@ -1,5 +1,6 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import IconTechnique from "./IconTechnique";
 
 function CvContenuExperiencePro({ elmt }) {
     return (
@@ -19,14 +20,19 @@ function CvContenuExperiencePro({ elmt }) {
                         {" "}
                         <FontAwesomeIcon
                             icon={faGithub}
-                            size="sm"
+                            size="1x"
                             className="ml-2 "
+                            color="black"
                         />
                     </a>
                 )}
-                <span></span>
             </h6>
-            <p className="mb-1 ml-4">{elmt.technique}</p>
+            <p className="m-0">{elmt.description}</p>
+            <p className="my-auto ml-2">
+                {elmt.technique.map((t, i) => (
+                    <IconTechnique key={elmt.projet.concat(i)} technique={t} />
+                ))}
+            </p>
         </li>
     );
 }

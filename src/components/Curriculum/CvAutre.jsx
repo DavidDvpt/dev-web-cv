@@ -4,9 +4,9 @@ import question from "../../images/question.png";
 
 function CvAutre() {
     return (
-        <Row>
+        <Row className="mb-2">
             <Col>
-                <h4 className="titleColLeft col-10">
+                <h4 className="title titleColLeft col-10">
                     <img src={question} alt="profil" className="profilIcon" />{" "}
                     Autre
                 </h4>
