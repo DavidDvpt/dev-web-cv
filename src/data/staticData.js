@@ -51,13 +51,13 @@ export const formationsAndDiplomes = [
                 "tissu cloqué 100% coton par simple lavage à haute température",
         },
     },
-    {
-        date: 1989,
-        nom: "Bac F3 (électrotechnique)",
-        ecole: "LT Diderot",
-        lieu: "Lyon (69)",
-        contenu: [],
-    },
+    // {
+    //     date: 1989,
+    //     nom: "Bac F3 (électrotechnique)",
+    //     ecole: "LT Diderot",
+    //     lieu: "Lyon (69)",
+    //     contenu: [],
+    // },
 ];
 
 export const experiencesProfessionnelles = [

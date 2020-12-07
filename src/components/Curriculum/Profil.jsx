@@ -12,14 +12,15 @@ function Profil({ className }) {
                 </h4>
             </Col>
             <Col className={`col-12 ${className}`}>
-                Passionné par l’univers informatique et en particulier le web,
-                mes compétences ont étés acquises principalement par
-                l’autoformation,
+                Passionné par l’univers informatique et en particulier le
                 <br />
-                que j’ai ensuite validé par une formation diplômante. Fort de
-                mon expérience concluante en stage, associée à une veille
-                technologique régulière orientée full stack web, je suis
-                actuellement une formation
+                web, mes compétences ont étés acquises principalement
+                <br />
+                par l’autoformation, que j’ai ensuite validé par une
+                <br />
+                formation diplômante. Fort de mon expérience concluante en
+                stage, associée à une veille technologique régulière orientée
+                full stack web, je suis actuellement une formation
                 <br />
                 axée web et mobile et prêt à saisir toute opportunité dans les
                 Pyrénées atlantiques

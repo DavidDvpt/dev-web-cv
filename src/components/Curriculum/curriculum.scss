@@ -36,8 +36,10 @@ $fontColorSecondary: white;
 }
 
 .badge-pill {
-    background-color: $backgroundSecondary;
-    color: $fontColorSecondary;
+    background-color: $backgroundPrimary;
+    color: $fontColorPrimary;
+    padding: 0px 3px !important;
+    margin-left: 5px;
 }
 .badge-pill-exp-prof {
     background-color: rgb(207, 205, 205);
