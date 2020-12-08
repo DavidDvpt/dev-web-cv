@@ -1,6 +1,6 @@
 $backgroundPrimary: white;
-$backgroundSecondary: rgb(78, 74, 74);
-$backgroundTernary: rgb(30, 212, 121);
+$backgroundSecondary: rgb(65, 41, 35);
+$backgroundTernary: rgb(209, 129, 9);
 
 $fontColorPrimary: black;
 $fontColorSecondary: white;
@@ -15,9 +15,8 @@ $fontColorSecondary: white;
     padding: 0px;
 }
 
-.enTete a {
-    color: $fontColorPrimary;
-    text-decoration: none;
+a {
+    color: $fontColorPrimary !important;
 }
 
 .avatar-container {
@@ -36,12 +35,16 @@ $fontColorSecondary: white;
 }
 
 .badge-pill {
-    background-color: $backgroundSecondary;
-    color: $fontColorSecondary;
+    background-color: $backgroundPrimary;
+    color: $fontColorPrimary;
+    padding: 0px 3px !important;
+    margin-left: 5px;
 }
 .badge-pill-exp-prof {
     background-color: rgb(207, 205, 205);
     padding-bottom: 2px;
+    font-size: 70%;
+    margin: auto;
     color: $fontColorPrimary;
     border: 1px solid black !important;
     color: $fontColorPrimary !important;
@@ -79,6 +82,7 @@ $fontColorSecondary: white;
 
 .leftColumn {
     background-color: $backgroundSecondary;
+    // background-image: url(../../images/timber-interior-texture.jpg);
     border-radius: 0% 200px 0% 0%;
     color: $fontColorSecondary;
 }

@@ -6,7 +6,6 @@ import CvExperiencesPro from "./CvExperiencesPro";
 import Profil from "./Profil";
 import Langues from "./Langues";
 import Interets from "./Interets";
-import CvAutre from "./CvAutre";
 import { Component } from "react";
 import LeftColumn from "./LeftColumn";
 import "./curriculum.scss";
@@ -17,15 +16,14 @@ class CurriculumContent extends Component {
             <Container className="curriculumContent">
                 <EnTete />
                 <Row className="mt-3">
-                    <LeftColumn className="col-6">
+                    <LeftColumn className="col-5">
                         <Profil className="p-0" />
+                        <CompetencesInfo />
                         <CvFormations />
                         <Langues />
                         <Interets />
-                        <CvAutre />
                     </LeftColumn>
-                    <div className="right-column col-6">
-                        <CompetencesInfo />
+                    <div className="right-column col-7">
                         <CvExperiencesPro />
                     </div>
                 </Row>

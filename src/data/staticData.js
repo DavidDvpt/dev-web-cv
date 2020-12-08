@@ -51,28 +51,45 @@ export const formationsAndDiplomes = [
                 "tissu cloqué 100% coton par simple lavage à haute température",
         },
     },
-    {
-        date: 1989,
-        nom: "Bac F3 (électrotechnique)",
-        ecole: "LT Diderot",
-        lieu: "Lyon (69)",
-        contenu: [],
-    },
+    // {
+    //     date: 1989,
+    //     nom: "Bac F3 (électrotechnique)",
+    //     ecole: "LT Diderot",
+    //     lieu: "Lyon (69)",
+    //     contenu: [],
+    // },
 ];
 
 export const experiencesProfessionnelles = [
     {
-        date: "2020-2021",
-        nom: "Wild Code School",
+        date: "2020-21",
+        nom: "WILD CODE SCHOOL",
         lieu: "Biarritz (64)",
         contenu: [
             {
-                projet: "Star-Burger",
-                description: "Site de burger façon 3 etoiles",
-                technique: ["html", "css", "javascript", "git"],
-                lien:
-                    "https://wildcodeschool.github.io/btz_p1_star-burgers/index.html",
-                github: "https://github.com/DavidDvpt/btz_p1_star-burgers",
+                projet: "Tree6clope",
+                description:
+                    "Application admin et client pour l'association 'Tree6clope'",
+                technique: [
+                    "nodejs",
+                    "react",
+                    "redux",
+                    "expressjs",
+                    "materialui",
+                    "mysql",
+                    "prisma",
+                    "git",
+                ],
+                lien: "",
+                github: "",
+            },
+            {
+                projet: "Hackathon 24h - Viking-invasion",
+                description:
+                    '"Back to the future" Outil pour aider les viking dans leurs pillages',
+                technique: ["react", "bootstrap", "reactstrap", "axios", "git"],
+                lien: "https://viking-invasion.netlify.app/",
+                github: "https://github.com/DavidDvpt/vikings-invasion",
             },
             {
                 projet: "World of Wildcraft",
@@ -83,34 +100,18 @@ export const experiencesProfessionnelles = [
                 github: "https://github.com/DavidDvpt/btz-0920-p2-wow",
             },
             {
-                projet: "Hackathon 24h - Viking-invasion",
-                description:
-                    '"Back to the future" Outil pour aider les viking dans leurs pillages',
-                technique: ["react", "bootstrap", "reactstrap", "axios", "git"],
-                lien: "https://viking-invasion.netlify.app/",
-                github:
-                    "https://github.com/TheodoreLefrancois/vikings-invasion",
-            },
-            {
-                projet: "tre6clope",
-                description:
-                    "Application admin et client pour l'association 'Tree6clope'",
-                technique: [
-                    "nodejs",
-                    "react",
-                    "expressjs",
-                    "materialui",
-                    "mysql",
-                    "prisma",
-                ],
-                lien: "",
-                github: "",
+                projet: "Star-Burger",
+                description: "Site de burger façon 3 etoiles",
+                technique: ["html", "css", "javascript", "git"],
+                lien:
+                    "https://wildcodeschool.github.io/btz_p1_star-burgers/index.html",
+                github: "https://github.com/DavidDvpt/btz_p1_star-burgers",
             },
         ],
     },
     {
         date: "2014",
-        nom: "e-Obs Technologies",
+        nom: "E-OBS TECHNOLOGIES",
         lieu: "Roanne (42)",
         contenu: [
             {
@@ -126,22 +127,22 @@ export const experiencesProfessionnelles = [
                 projet: "Ajout d'outil javascript",
                 description:
                     "DAL de gestion de google map API pour intégrer l'itinéraire à l'outil de livraison des commandes",
-                technique: ["javascript", "php", "mysql", "google map API"],
+                technique: ["javascript", "php", "mysql"],
                 lien: "",
                 github: "",
             },
         ],
     },
     {
-        date: "2013-2014",
+        date: "2013-14",
         nom: "AFPA",
         lieu: "Pont-de-Claix (38)",
         contenu: [
             {
                 projet: "Gestion de fabrication de pistons",
                 description:
-                    "Gestion de qualité des pistons avec utilisation de rôles utilisateurs",
-                technique: ["Windows Forms", "sqlserver", "c#", "net"],
+                    "Aplication Windows Forms de gestion de qualité des pistons avec utilisation de rôles utilisateurs",
+                technique: ["sqlserver", "c#", "net"],
                 lien: "",
                 github: "",
             },
@@ -149,7 +150,7 @@ export const experiencesProfessionnelles = [
                 projet: "Site e-commerce de vente de CD",
                 description:
                     "Gestion de l'identification, du catalogue, du panier, de la commande et du paiement par web service",
-                technique: ["aspnet", "sqlserver", "c#", "net", "Web Service"],
+                technique: ["aspnet", "sqlserver", "c#", "net"],
                 lien: "",
                 github: "",
             },
@@ -157,7 +158,7 @@ export const experiencesProfessionnelles = [
     },
     {
         date: "1993-2020",
-        nom: "Tissages d'Ameublement de la Loire (TAL)",
+        nom: "TAL (Tissages d'Ameublement de la Loire)",
         contenu: [
             {
                 projet: "CAO - croisement de fils",
