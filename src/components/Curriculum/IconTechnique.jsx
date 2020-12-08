@@ -20,6 +20,7 @@ import materialUi from "../../images/material-ui.png";
 import expressJs from "../../images/express-logo.png";
 import tortoiseCVS from "../../images/TortoiseCVS_Logo.png";
 import reactStrap from "../../images/reactstrap.png";
+import redux from "../../images/redux.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function IconTechnique({ technique }) {
@@ -66,6 +67,15 @@ function IconTechnique({ technique }) {
                     />
                 </span>
             );
+        case "redux":
+            return (
+                <img
+                    src={redux}
+                    className="mx-2 exp-info-icon"
+                    title="Prisma"
+                    alt="Prisma"
+                />
+            );
         case "git":
             return (
                 <span title="Git">
@@ -80,7 +90,7 @@ function IconTechnique({ technique }) {
             );
         case "bootstrap":
             return (
-                <span title="Bootstrap">
+                <span title="Bootstrap" className="bgd-primary">
                     <FontAwesomeIcon
                         icon={faBootstrap}
                         size="lg"
@@ -117,14 +127,20 @@ function IconTechnique({ technique }) {
         case "axios":
             return (
                 <img
-                    src={prisma}
+                    src={axios}
                     className="mx-2 exp-info-icon"
-                    title="Prisma"
+                    title="Axios"
+                    alt="Axios"
                 />
             );
         case "prisma":
             return (
-                <img src={axios} className="mx-2 exp-info-icon" title="Axios" />
+                <img
+                    src={prisma}
+                    className="mx-2 exp-info-icon"
+                    title="Prisma"
+                    alt="Prisma"
+                />
             );
         case "sqlserver":
             return (
@@ -132,21 +148,44 @@ function IconTechnique({ technique }) {
                     src={sqlServer}
                     className="mx-2 exp-info-icon"
                     title="SQL Server"
+                    alt="SQL Server"
                 />
             );
         case "net":
-            return <img src={msNet} className="mx-2 express-js" title=".NET" />;
+            return (
+                <img
+                    src={msNet}
+                    className="mx-2 express-js"
+                    title=".NET"
+                    alt=".NET"
+                />
+            );
         case "aspnet":
             return (
-                <img src={aspNet} className="mx-2 express-js" title="ASP.NET" />
+                <img
+                    src={aspNet}
+                    className="mx-2 express-js"
+                    title="ASP.NET"
+                    alt="ASP.NET"
+                />
             );
         case "c#":
             return (
-                <img src={cSharp} className="mx-2 exp-info-icon" title="C#" />
+                <img
+                    src={cSharp}
+                    className="mx-2 exp-info-icon"
+                    title="C#"
+                    alt="C#"
+                />
             );
         case "mysql":
             return (
-                <img src={mySql} className="mx-2 exp-info-icon" title="MySQL" />
+                <img
+                    src={mySql}
+                    className="mx-2 exp-info-icon"
+                    title="MySQL"
+                    alt="MySQL"
+                />
             );
         case "materialui":
             return (
@@ -154,6 +193,7 @@ function IconTechnique({ technique }) {
                     src={materialUi}
                     className="mx-2 exp-info-icon"
                     title="Material UI"
+                    alt="Material UI"
                 />
             );
         case "expressjs":
@@ -162,6 +202,7 @@ function IconTechnique({ technique }) {
                     src={expressJs}
                     className="mx-2 express-js"
                     title="Express JS"
+                    alt="Express JS"
                 />
             );
         case "tortoise":
@@ -170,6 +211,7 @@ function IconTechnique({ technique }) {
                     src={tortoiseCVS}
                     className="mx-2 express-js"
                     title="TortoiseCVS"
+                    alt="TortoiseCVS"
                 />
             );
         case "reactstrap":
@@ -178,6 +220,7 @@ function IconTechnique({ technique }) {
                     src={reactStrap}
                     className="mx-2 exp-info-icon"
                     title="Reactstrap"
+                    alt="Reactstrap"
                 />
             );
         case "php":

@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconTechnique from "./IconTechnique";
 
 function CvContenuExperiencePro({ elmt }) {
+    console.log(elmt.technique);
     return (
-        <li>
-            <h6 className="m-0">
+        <li className="mb-3">
+            <h5 className="m-0 d-flex">
                 <span>
                     {elmt.lien === "" ? (
                         elmt.projet
@@ -13,26 +14,30 @@ function CvContenuExperiencePro({ elmt }) {
                         <a href={elmt.lien}>{elmt.projet}</a>
                     )}
                 </span>{" "}
-                {elmt.github === "" ? (
-                    ""
-                ) : (
-                    <a href={elmt.github} className="">
-                        {" "}
-                        <FontAwesomeIcon
-                            icon={faGithub}
-                            size="1x"
-                            className="ml-2 "
-                            color="black"
+                <span>
+                    {elmt.github === "" ? (
+                        ""
+                    ) : (
+                        <a href={elmt.github}>
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                size="1x"
+                                className="ml-2 "
+                                color="black"
+                            />
+                        </a>
+                    )}
+                </span>
+                <p className="my-auto ml-2 flex-grow-1 d-flex justify-content-end">
+                    {elmt.technique.map((t, i) => (
+                        <IconTechnique
+                            key={elmt.projet.concat(i)}
+                            technique={t}
                         />
-                    </a>
-                )}
-            </h6>
+                    ))}
+                </p>
+            </h5>
             <p className="m-0">{elmt.description}</p>
-            <p className="my-auto ml-2">
-                {elmt.technique.map((t, i) => (
-                    <IconTechnique key={elmt.projet.concat(i)} technique={t} />
-                ))}
-            </p>
         </li>
     );
 }
