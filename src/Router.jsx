@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Formations from "./pages/Formations";
 import Intro from "./pages/Intro";
 import Projets from "./pages/Projets";
+import UnderConstruction from "./pages/UnderConstruction";
 
 const Router = () => {
     const [startNavAnim, setStartNavAnim] = useState(false);
@@ -15,9 +16,9 @@ const Router = () => {
             <AppContext.Provider value={{ startNavAnim, setStartNavAnim }}>
                 <Layout>
                     <Route exact path="/" component={Intro} />
-                    <Route path="/projets" component={Projets} />
-                    <Route path="/experiences" component={Experiences} />
-                    <Route path="/formations" component={Formations} />
+                    <Route path="/projets" component={UnderConstruction} />
+                    <Route path="/experiences" component={UnderConstruction} />
+                    <Route path="/formations" component={UnderConstruction} />
                     <Route path="/curriculum" component={Curriculum} />
                 </Layout>
             </AppContext.Provider>
