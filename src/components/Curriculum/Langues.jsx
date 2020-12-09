@@ -1,4 +1,5 @@
 import { Col, Row } from "reactstrap";
+import style from "./curriculum.module.scss";
 
 import language from "../../images/language.png";
 
@@ -6,8 +7,12 @@ function Langues() {
     return (
         <Row className="mb-2">
             <Col>
-                <h4 className="title titleColLeft col-10">
-                    <img src={language} alt="profil" className="profilIcon" />{" "}
+                <h4 className={`${style.title} ${style.titleColLeft} col-12`}>
+                    <img
+                        src={language}
+                        alt="profil"
+                        className={style.profilIcon}
+                    />{" "}
                     Langues
                 </h4>
             </Col>

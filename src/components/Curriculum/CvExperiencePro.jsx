@@ -1,16 +1,16 @@
-import { Col, Row } from "reactstrap";
 import CvContenuExperiencePro from "./CvContenuExperiencePro";
+import style from "./curriculum.module.scss";
+import { Row } from "reactstrap";
 
 function CvExperiencePro({ experiencePro }) {
     return (
-        <Col className="col-12 mb-2">
-            <Row>
-                <h5 className="col">
-                    {experiencePro.date} - {experiencePro.nom}
-                </h5>
-            </Row>
-            <Row className="col">
-                <ul className="mb-0">
+        <div className="col-12">
+            <h5 className="font-weight-bold my-3">
+                {experiencePro.date} - {experiencePro.nom}
+            </h5>
+            <Row className="ml-0">
+                <div className={`${style.width10} ${style.bgdTernary}`}></div>
+                <ul className="mb-0 pl-4 flex-grow-1 col">
                     {experiencePro.contenu.map((elmt, i) => {
                         return (
                             <CvContenuExperiencePro
@@ -21,7 +21,7 @@ function CvExperiencePro({ experiencePro }) {
                     })}
                 </ul>
             </Row>
-        </Col>
+        </div>
     );
 }
 

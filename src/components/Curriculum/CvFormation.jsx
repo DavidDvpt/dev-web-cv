@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 function CvFormation({ formation, className }) {
     return (

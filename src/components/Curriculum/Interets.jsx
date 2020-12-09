@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "reactstrap";
+import style from "./curriculum.module.scss";
 
 import hobby from "../../images/hobby.png";
 
@@ -15,8 +16,14 @@ function Interets() {
         <>
             <Row className="mb-2">
                 <Col>
-                    <h4 className="title titleColLeft col-10">
-                        <img src={hobby} alt="profil" className="profilIcon" />{" "}
+                    <h4
+                        className={`${style.title} ${style.titleColLeft} col-12`}
+                    >
+                        <img
+                            src={hobby}
+                            alt="profil"
+                            className={style.profilIcon}
+                        />{" "}
                         Intérets
                     </h4>
                 </Col>
@@ -42,13 +49,19 @@ function Interets() {
                 </Col>
             </Row>
             <Row>
-                <Col className="p-0">
+                <Col className="col-3 p-0">
                     <div className="text-center">
                         <FontAwesomeIcon icon={faUmbrellaBeach} size="2x" />
                     </div>
                     <p className="col-11 p-0 m-0">la côte basque</p>
                 </Col>
-                <Col className="p-0">
+                <Col className="col-3 p-0">
+                    <div className="text-center">
+                        <FontAwesomeIcon icon={faFutbol} size="2x" />
+                    </div>
+                    <p className="col-11 p-0 m-0">Olympique Lyonnais</p>
+                </Col>
+                <Col className="col-6 p-0">
                     <div className="text-center">
                         <FontAwesomeIcon icon={faLaptopCode} size="2x" />
                     </div>
@@ -57,14 +70,7 @@ function Interets() {
                     </p>
                 </Col>
             </Row>
-            <Row>
-                <Col className="p-0 col-6">
-                    <div className="text-center">
-                        <FontAwesomeIcon icon={faFutbol} size="2x" />
-                    </div>
-                    <p className="col-11 p-0 m-0">Olympique Lyonnais</p>
-                </Col>
-            </Row>
+            <Row></Row>
         </>
     );
 }

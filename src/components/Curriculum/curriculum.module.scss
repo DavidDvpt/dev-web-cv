@@ -1,6 +1,6 @@
 $backgroundPrimary: white;
-$backgroundSecondary: rgb(78, 74, 74);
-$backgroundTernary: rgb(30, 212, 121);
+$backgroundSecondary: rgb(3, 45, 94);
+$backgroundTernary: rgb(5, 107, 224);
 
 $fontColorPrimary: black;
 $fontColorSecondary: white;
@@ -15,47 +15,53 @@ $fontColorSecondary: white;
     padding: 0px;
 }
 
-.enTete a {
-    color: $fontColorPrimary;
-    text-decoration: none;
+a {
+    color: $fontColorSecondary !important;
 }
 
-.avatar-container {
+.avatarContainer {
     border-radius: 0% 50% 50% 0%;
-    background-color: $backgroundTernary;
+    background-color: $backgroundSecondary;
 }
 
 .avatar {
-    border: 5px solid $backgroundTernary;
+    border: 5px solid $backgroundSecondary;
 }
 
-.width-10 {
+.textContainer {
+    color: $fontColorSecondary !important;
+}
+.width10 {
     width: 15px;
     padding: 0px;
     margin: 0px;
 }
 
-.badge-pill {
-    background-color: $backgroundSecondary;
-    color: $fontColorSecondary;
+.badgePill {
+    background-color: $backgroundPrimary;
+    color: $fontColorPrimary;
+    padding: 0px 3px !important;
+    margin-left: 5px;
 }
-.badge-pill-exp-prof {
+.badgePillExpProf {
     background-color: rgb(207, 205, 205);
     padding-bottom: 2px;
+    font-size: 70%;
+    margin: auto;
     color: $fontColorPrimary;
     border: 1px solid black !important;
     color: $fontColorPrimary !important;
 }
 
-.bgd-primary {
+.bgdPrimary {
     background-color: $backgroundPrimary;
 }
 
-.bgd-secondary {
+.bgdSecondary {
     background-color: $backgroundSecondary;
 }
 
-.bgd-ternary {
+.bgdTernary {
     background-color: $backgroundTernary;
 }
 
@@ -79,24 +85,25 @@ $fontColorSecondary: white;
 
 .leftColumn {
     background-color: $backgroundSecondary;
+    // background-image: url(../../images/timber-interior-texture.jpg);
     border-radius: 0% 200px 0% 0%;
     color: $fontColorSecondary;
 }
 
-.right-column {
+.rightColumn {
     background-color: $backgroundPrimary;
 }
 
-.comp-info-icon {
+.compInfoIcon {
     width: 32px;
     height: 32px;
 }
 
-.exp-info-icon {
+.expInfoIcon {
     width: 24px;
     height: 24px;
 }
-.express-js {
+.expressJs {
     height: 24px;
 }
 

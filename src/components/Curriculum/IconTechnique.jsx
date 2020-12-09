@@ -20,7 +20,9 @@ import materialUi from "../../images/material-ui.png";
 import expressJs from "../../images/express-logo.png";
 import tortoiseCVS from "../../images/TortoiseCVS_Logo.png";
 import reactStrap from "../../images/reactstrap.png";
+import redux from "../../images/redux.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import style from "./curriculum.module.scss";
 
 function IconTechnique({ technique }) {
     switch (technique) {
@@ -66,6 +68,15 @@ function IconTechnique({ technique }) {
                     />
                 </span>
             );
+        case "redux":
+            return (
+                <img
+                    src={redux}
+                    className={`mx-2 ${style.expInfoIcon}`}
+                    title="Prisma"
+                    alt="Prisma"
+                />
+            );
         case "git":
             return (
                 <span title="Git">
@@ -80,7 +91,7 @@ function IconTechnique({ technique }) {
             );
         case "bootstrap":
             return (
-                <span title="Bootstrap">
+                <span title="Bootstrap" className="bgd-primary">
                     <FontAwesomeIcon
                         icon={faBootstrap}
                         size="lg"
@@ -117,67 +128,100 @@ function IconTechnique({ technique }) {
         case "axios":
             return (
                 <img
-                    src={prisma}
-                    className="mx-2 exp-info-icon"
-                    title="Prisma"
+                    src={axios}
+                    className={`mx-2 ${style.expInfoIcon}`}
+                    title="Axios"
+                    alt="Axios"
                 />
             );
         case "prisma":
             return (
-                <img src={axios} className="mx-2 exp-info-icon" title="Axios" />
+                <img
+                    src={prisma}
+                    className={`mx-2 ${style.expInfoIcon}`}
+                    title="Prisma"
+                    alt="Prisma"
+                />
             );
         case "sqlserver":
             return (
                 <img
                     src={sqlServer}
-                    className="mx-2 exp-info-icon"
+                    className={`mx-2 ${style.expInfoIcon}`}
                     title="SQL Server"
+                    alt="SQL Server"
                 />
             );
         case "net":
-            return <img src={msNet} className="mx-2 express-js" title=".NET" />;
+            return (
+                <img
+                    src={msNet}
+                    className={`mx-2 ${style.expressJs}`}
+                    title=".NET"
+                    alt=".NET"
+                />
+            );
         case "aspnet":
             return (
-                <img src={aspNet} className="mx-2 express-js" title="ASP.NET" />
+                <img
+                    src={aspNet}
+                    className={`mx-2 ${style.expressJs}`}
+                    title="ASP.NET"
+                    alt="ASP.NET"
+                />
             );
         case "c#":
             return (
-                <img src={cSharp} className="mx-2 exp-info-icon" title="C#" />
+                <img
+                    src={cSharp}
+                    className={`mx-2 ${style.expInfoIcon}`}
+                    title="C#"
+                    alt="C#"
+                />
             );
         case "mysql":
             return (
-                <img src={mySql} className="mx-2 exp-info-icon" title="MySQL" />
+                <img
+                    src={mySql}
+                    className={`mx-2 ${style.expInfoIcon}`}
+                    title="MySQL"
+                    alt="MySQL"
+                />
             );
         case "materialui":
             return (
                 <img
                     src={materialUi}
-                    className="mx-2 exp-info-icon"
+                    className={`mx-2 ${style.expInfoIcon}`}
                     title="Material UI"
+                    alt="Material UI"
                 />
             );
         case "expressjs":
             return (
                 <img
                     src={expressJs}
-                    className="mx-2 express-js"
+                    className={`mx-2 ${style.expressJs}`}
                     title="Express JS"
+                    alt="Express JS"
                 />
             );
         case "tortoise":
             return (
                 <img
                     src={tortoiseCVS}
-                    className="mx-2 express-js"
+                    className={`mx-2 ${style.expressJs}`}
                     title="TortoiseCVS"
+                    alt="TortoiseCVS"
                 />
             );
         case "reactstrap":
             return (
                 <img
                     src={reactStrap}
-                    className="mx-2 exp-info-icon"
+                    className={`mx-2 ${style.expInfoIcon}`}
                     title="Reactstrap"
+                    alt="Reactstrap"
                 />
             );
         case "php":
@@ -186,14 +230,16 @@ function IconTechnique({ technique }) {
                     <FontAwesomeIcon
                         icon={faPhp}
                         size="lg"
-                        className="mx-2"
+                        className={`mx-2 ${style.expInfoIcon}`}
                         color="#8993c1"
                     />
                 </span>
             );
         default:
             return (
-                <span className="badge-pill badge-pill-exp-prof mx-2">
+                <span
+                    className={`${style.badgePill} ${style.badgePillExpProf} mx-2 badge-pill`}
+                >
                     {technique}
                 </span>
             );
