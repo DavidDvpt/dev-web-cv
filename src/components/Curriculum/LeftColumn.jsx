@@ -1,13 +1,14 @@
 import { Col, Row } from "reactstrap";
+import style from "./curriculum.module.scss";
 
 function LeftColumn({ children, className }) {
     return (
-        <div className={`leftColumn ${className}`}>
+        <div className={`${className} ${style.leftColumn}`}>
             <Row>
-                <div className="width-10 bgd-secondary" />
-                <div className="width-10 bgd-primary" />
-                <div className="width-10 bgd-secondary" />
-                <Col className="leftColumnContent">{children}</Col>
+                <div className={`${style.width10} ${style.bgdSecondary}`} />
+                <div className={`${style.width10} ${style.bgdPrimary}`} />
+                <div className={`${style.width10} ${style.bgdSecondary}`} />
+                <Col className={style.leftColumnContent}>{children}</Col>
             </Row>
         </div>
     );

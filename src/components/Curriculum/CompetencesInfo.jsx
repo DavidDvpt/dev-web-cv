@@ -13,14 +13,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import vsCode from "../../images/Visual_Studio.png";
 import code from "../../images/code.png";
 import windows from "../../images/windows.png";
+import style from "./curriculum.module.scss";
 
 function CompetencesInfo() {
     return (
         <>
             <Row>
                 <Col>
-                    <h4 className="col title titleColLeft col-12">
-                        <img src={code} alt="profil" className="profilIcon" />{" "}
+                    <h4
+                        className={`${style.title} ${style.titleColLeft} col-12`}
+                    >
+                        <img
+                            src={code}
+                            alt="profil"
+                            className={style.profilIcon}
+                        />{" "}
                         Compétences informatiques
                     </h4>
                 </Col>
@@ -69,10 +76,18 @@ function CompetencesInfo() {
             <Row className="mb-3">
                 <h6 className="col-3 my-auto pl-0">Soft skill</h6>
                 <p className="row col-9 p-0 my-auto flex-grow-1">
-                    <span className="badge-pill">Curieux</span>
-                    <span className="badge-pill">Autonome</span>
-                    <span className="badge-pill">Rigoureux</span>
-                    <span className="badge-pill">Pertinent</span>
+                    <span className={`${style.badgePill} badge-pill`}>
+                        Curieux
+                    </span>
+                    <span className={`${style.badgePill} badge-pill`}>
+                        Autonome
+                    </span>
+                    <span className={`${style.badgePill} badge-pill`}>
+                        Rigoureux
+                    </span>
+                    <span className={`${style.badgePill} badge-pill`}>
+                        Pertinent
+                    </span>
                 </p>
             </Row>
             <Row className="mb-3">
@@ -93,14 +108,16 @@ function CompetencesInfo() {
                     <img
                         src={windows}
                         alt="windows logo"
-                        className="comp-info-icon mx-2"
+                        className={`${style.compInfoIcon} mx-2`}
                     />
                     <img
                         src={vsCode}
                         alt="visual studio code"
-                        className="comp-info-icon mx-2"
+                        className={`${style.compInfoIcon} mx-2`}
                     />
-                    <span className="badge-pill my-auto justify-content-center">
+                    <span
+                        className={`${style.badgePill} badge-pill my-auto justify-content-center`}
+                    >
                         WSL 2
                     </span>
                 </p>

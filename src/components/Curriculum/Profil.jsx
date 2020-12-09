@@ -1,4 +1,5 @@
 import { Col, Row } from "reactstrap";
+import style from "./curriculum.module.scss";
 
 import profil from "../../images/profil.png";
 
@@ -6,8 +7,12 @@ function Profil({ className }) {
     return (
         <Row className="mb-2">
             <Col>
-                <h4 className="title titleColLeft col-10">
-                    <img src={profil} alt="profil" className="profilIcon" />{" "}
+                <h4 className={`${style.title} ${style.titleColLeft} col-10`}>
+                    <img
+                        src={profil}
+                        alt="profil"
+                        className={style.profilIcon}
+                    />
                     Profil
                 </h4>
             </Col>

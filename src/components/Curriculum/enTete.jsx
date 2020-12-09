@@ -9,18 +9,24 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+import style from "./curriculum.module.scss";
+
 import photoProfil_200 from "../../images/photoProfil_200.jpeg";
 
 function EnTete() {
     return (
-        <Row className="enTete">
-            <div className="text-container bgd-ternary flex-grow-1 d-flex">
+        <Row className={style.enTete}>
+            <div
+                className={`${style.textContainer} ${style.bgdSecondary}
+                } flex-grow-1 d-flex`}
+            >
                 <div className="col-3 pr-0 d-flex flex-column justify-content-center">
                     <p>
                         <FontAwesomeIcon
                             icon={faBirthdayCake}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         14 décembre 1969
                     </p>
@@ -29,6 +35,7 @@ function EnTete() {
                             icon={faMapMarkerAlt}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         Bayonne
                     </p>
@@ -37,6 +44,7 @@ function EnTete() {
                             icon={faPhone}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         06 80 52 15 94
                     </p>
@@ -46,6 +54,7 @@ function EnTete() {
                             icon={faWheelchair}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         Reconnaissance RQTH
                     </p>
@@ -56,6 +65,7 @@ function EnTete() {
                             icon={faAt}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         <a href="mailto=david.mosca69@gmail.com">
                             david.mosca69@gmail.com
@@ -66,6 +76,7 @@ function EnTete() {
                             icon={faGithub}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         <a href="https://github.com/DavidDvpt" target="_blank">
                             DavidDvpt
@@ -76,6 +87,7 @@ function EnTete() {
                             icon={faLinkedin}
                             size="1x"
                             className="mr-2"
+                            color="white"
                         />
                         <a
                             href="https://www.linkedin.com/in/david-mosca/"
@@ -92,11 +104,11 @@ function EnTete() {
                     </h2>
                 </div>
             </div>
-            <Col className="avatar-container flex-grow-0 pr-0">
+            <Col className={`${style.avatarContainer} flex-grow-0 pr-0`}>
                 <img
                     src={photoProfil_200}
                     alt="avatar"
-                    className="avatar rounded-circle"
+                    className={`${style.avatar} rounded-circle`}
                 />
             </Col>
         </Row>

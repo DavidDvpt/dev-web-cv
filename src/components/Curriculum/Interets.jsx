@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "reactstrap";
+import style from "./curriculum.module.scss";
 
 import hobby from "../../images/hobby.png";
 
@@ -15,8 +16,14 @@ function Interets() {
         <>
             <Row className="mb-2">
                 <Col>
-                    <h4 className="title titleColLeft col-10">
-                        <img src={hobby} alt="profil" className="profilIcon" />{" "}
+                    <h4
+                        className={`${style.title} ${style.titleColLeft} col-12`}
+                    >
+                        <img
+                            src={hobby}
+                            alt="profil"
+                            className={style.profilIcon}
+                        />{" "}
                         Intérets
                     </h4>
                 </Col>
