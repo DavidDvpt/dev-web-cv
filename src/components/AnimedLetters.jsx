@@ -1,48 +1,19 @@
-import { useEffect } from "react";
-import { Container } from "reactstrap";
-import anime from "animejs/lib/anime.es";
-
-const animation = () => {
-    const valueY = Math.floor(window.innerHeight * 0.4);
-    const valueX = Math.floor(window.innerWidth * 0.2);
-    const tl = anime.timeline({
-        easing: "linear",
-        duration: 750,
-    });
-    tl.add({
-        targets: ".introContainer",
-        backgroundColor: ["#fff", "#0E0441"],
-        duration: 1000,
-    })
-        .add({
-            targets: ".letter",
-            opacity: [0, 1],
-            translateY: valueY,
-            translateX: valueX,
-            duration: 500,
-            easing: "easeInExpo",
-            rotate: {
-                value: 360,
-                duration: 800,
-                easing: "easeInExpo",
-            },
-            // // difference de taille entre la
-            // scale: anime.stagger([0.7, 1], { from: "center" }),
-            // // tps entre chaque descente de lettre
-            delay: anime.stagger(400, { start: 1000 }),
-            // delay: anime.stagger(400, { start: 1000 }),
-            //
-        })
-        .add({
-            targets: ".introContainer",
-        });
-};
-
 function AnimedLetters() {
-    useEffect(() => {
-        animation();
-    }, []);
-    return <Container fluid className=""></Container>;
+    return (
+        <div className="letterBlock col-12 p-0 m-auto">
+            <span className="letter ib op-0">D</span>
+            <span className="letter ib op-0">a</span>
+            <span className="letter ib op-0">v</span>
+            <span className="letter ib op-0">i</span>
+            <span className="letter ib op-0">d</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span className="letter ib op-0">M</span>
+            <span className="letter ib op-0">O</span>
+            <span className="letter ib op-0">S</span>
+            <span className="letter ib op-0">C</span>
+            <span className="letter ib op-0">A</span>
+        </div>
+    );
 }
 
 export default AnimedLetters;
