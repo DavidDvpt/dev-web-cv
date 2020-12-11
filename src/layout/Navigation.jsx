@@ -7,7 +7,7 @@ import AppContext from "../context/appContext";
 import { animationNav } from "../js/animations";
 
 function Navigation() {
-    const { startNavAnim, setStartNavAnim } = useContext(AppContext);
+    const { startNavAnim } = useContext(AppContext);
 
     useEffect(() => {
         if (startNavAnim) {

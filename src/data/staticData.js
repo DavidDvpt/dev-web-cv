@@ -69,7 +69,7 @@ export const experiencesProfessionnelles = [
             {
                 projet: "Tree6clope",
                 description:
-                    "Application admin et client pour l'association 'Tree6clope'",
+                    "Application back / front admin et front client pour l'association 'Tree6clope'",
                 technique: [
                     "nodejs",
                     "react",
