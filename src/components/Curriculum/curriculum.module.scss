@@ -16,7 +16,16 @@ $fontColorSecondary: white;
 }
 
 a {
+    text-decoration: none;
+}
+.enTete a {
     color: $fontColorSecondary !important;
+    text-decoration: underline $backgroundSecondary;
+}
+
+a {
+    color: $fontColorPrimary !important;
+    text-decoration: underline $backgroundPrimary;
 }
 
 .avatarContainer {

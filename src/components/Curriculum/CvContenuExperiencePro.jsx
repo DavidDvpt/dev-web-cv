@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconTechnique from "./IconTechnique";
 
 function CvContenuExperiencePro({ elmt }) {
-    console.log(elmt.technique);
     return (
         <li className="mb-3">
             <h5 className="m-0 d-flex">

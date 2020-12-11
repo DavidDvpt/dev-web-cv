@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { Container } from "reactstrap";
-import AnimedLetters from "../components/AnimedLetters";
+import AnimedLetters from "../components/Intro/AnimedLetters";
 import AppContext from "../context/appContext";
 import { animationIntro } from "../js/animations";
 
